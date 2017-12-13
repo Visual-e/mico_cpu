@@ -1,0 +1,53 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Nov 30 05:40:17 2017 *
+NOTE DESIGN NAME: vga_leds *
+NOTE DEVICE NAME: LCMXO2-7000HC-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS sram_data[1] : 82 : inout *
+NOTE PINS sram_data[0] : 81 : inout *
+NOTE PINS sram_data[2] : 83 : inout *
+NOTE PINS sram_data[3] : 84 : inout *
+NOTE PINS sram_data[4] : 98 : inout *
+NOTE PINS sram_data[5] : 99 : inout *
+NOTE PINS sram_data[6] : 100 : inout *
+NOTE PINS sram_data[7] : 103 : inout *
+NOTE PINS sram_adr[16] : 105 : out *
+NOTE PINS sram_adr[17] : 104 : out *
+NOTE PINS sram_adr[18] : 69 : out *
+NOTE PINS CLK50MHZ : 49 : in *
+NOTE PINS b[0] : 26 : out *
+NOTE PINS sram_csn : 73 : out *
+NOTE PINS b[1] : 25 : out *
+NOTE PINS sram_oen : 107 : out *
+NOTE PINS b[2] : 24 : out *
+NOTE PINS sram_wen : 85 : out *
+NOTE PINS b[3] : 23 : out *
+NOTE PINS sram_adr[0] : 78 : out *
+NOTE PINS g[0] : 22 : out *
+NOTE PINS sram_adr[1] : 77 : out *
+NOTE PINS g[1] : 21 : out *
+NOTE PINS sram_adr[2] : 76 : out *
+NOTE PINS g[2] : 20 : out *
+NOTE PINS sram_adr[3] : 75 : out *
+NOTE PINS g[3] : 19 : out *
+NOTE PINS sram_adr[4] : 74 : out *
+NOTE PINS r[0] : 17 : out *
+NOTE PINS sram_adr[5] : 86 : out *
+NOTE PINS r[1] : 15 : out *
+NOTE PINS sram_adr[6] : 87 : out *
+NOTE PINS r[2] : 14 : out *
+NOTE PINS r[3] : 13 : out *
+NOTE PINS sram_adr[7] : 89 : out *
+NOTE PINS sram_adr[8] : 91 : out *
+NOTE PINS sram_adr[9] : 92 : out *
+NOTE PINS sram_adr[10] : 93 : out *
+NOTE PINS sram_adr[11] : 94 : out *
+NOTE PINS sram_adr[12] : 95 : out *
+NOTE PINS vsync : 28 : out *
+NOTE PINS hsync : 27 : out *
+NOTE PINS sram_adr[13] : 96 : out *
+NOTE PINS sram_adr[14] : 97 : out *
+NOTE PINS sram_adr[15] : 106 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

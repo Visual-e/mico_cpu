@@ -1,0 +1,1367 @@
+
+synthesis -f "mico_cpu_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.10.1.112
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Nov 30 05:38:29 2017
+
+
+Command Line:  synthesis -f mico_cpu_impl1_lattice.synproj -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HC.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HC
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = vga_leds.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu (searchpath added)
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu (searchpath added)
+-p D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/impl1 (searchpath added)
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu (searchpath added)
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/display.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/hvsync.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/main_pll.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/vga_leds.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v
+NGD file = mico_cpu_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+EDIF design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/main_pll.edn
+Technology check ok...
+
+Analyzing Verilog file D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Reading EDIF file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.edn
+
+Creating library ORCLIB
+
+Creating cell VLO
+
+Creating cell EHXPLLJ
+
+Creating cell main_pll
+
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v. VERI-1482
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(9): " arg1="NUM_RED_LEDS" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="9"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(10): " arg1="NUM_GREEN_LEDS" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="10"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(11): " arg1="NUM_SEGMENTS" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="11"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(32): " arg1="r_hsync" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="32"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(33): " arg1="r_vsync" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="33"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(34): " arg1="red_word" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="34"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(35): " arg1="green_word" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="35"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(36): " arg1="blue_word" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="36"  />
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v. VERI-1482
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v. VERI-1482
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v. VERI-1482
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v. VERI-1482
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(46): " arg1="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="46"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(327): " arg1="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="327"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(52): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="52"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(54): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="54"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(57): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typeb.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="57"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(58): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="58"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(59): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="59"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(53): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v" arg3="53"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(54): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v" arg3="54"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v(60): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg3="60"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(60): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="60"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(61): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="61"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(52): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v" arg3="52"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(64): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="64"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v(49): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v" arg3="49"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(65): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="65"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(66): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="66"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(94): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v" arg3="94"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(791): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v" arg3="791"  />
+    <postMsg mid="35901407" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(653): " arg1="preserve_driver" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v" arg3="653"  />
+    <postMsg mid="35901407" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(652): " arg1="preserve_signal" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v" arg3="652"  />
+    <postMsg mid="35901214" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v(54): " arg1="value" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg3="54"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(67): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="67"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v(52): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v" arg3="52"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(68): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="68"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(53): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v" arg3="53"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(186): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v" arg3="186"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(69): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="69"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(56): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v" arg3="56"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(336): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v" arg3="336"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(70): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="70"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v(57): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v" arg3="57"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(71): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="71"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(71): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg3="71"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(380): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg3="380"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(72): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="72"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg3="50"  />
+    <postMsg mid="35901407" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(130): " arg1="preserve_signal" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg3="130"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(73): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="73"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(63): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v" arg3="63"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(283): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v" arg3="283"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(74): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="74"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(76): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="76"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(79): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="79"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(82): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="82"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(84): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="84"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(52): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v" arg3="52"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(277): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v" arg3="277"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(86): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="86"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(50): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v" arg3="50"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(51): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v" arg3="51"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(87): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="87"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v(51): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v" arg3="51"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(104): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v" arg3="104"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v(52): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v" arg3="52"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v(53): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v" arg3="53"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(328): " arg1="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="328"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(64): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v" arg3="64"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(112): " arg1="asram_core" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v" arg3="112"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(113): " arg1="asram_core" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v" arg3="113"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(114): " arg1="asram_core" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v" arg3="114"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(329): " arg1="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="329"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v(56): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v" arg3="56"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(330): " arg1="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="330"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(79): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg3="79"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(176): " arg1="gpio" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg3="176"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(331): " arg1="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="331"  />
+    <postMsg mid="35901328" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(65): " arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v" arg3="65"  />
+    <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(87): " arg1="tpio" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v" arg3="87"  />
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/impl1"  />
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): vga_leds
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v(2): " arg1="vga_leds" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v(8): " arg1="main_pll" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKI_DIV=2,CLKFB_DIV=3,CLKOS_DIV=6,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=7,CLKOS_CPHASE=5)" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(334): " arg1="mico_cpu" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="334"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): " arg1="BB" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="82"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(48): " arg1="arbiter2" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="48"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(289): " arg1="32" arg2="4" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="289"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(293): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="293"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(297): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="297"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(301): " arg1="32" arg2="2" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="301"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(305): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="305"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(309): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="309"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(313): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="313"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(316): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="316"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(317): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="317"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(318): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="318"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(321): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="321"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(322): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="322"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(323): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="323"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(507): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="507"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(512): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg4="512"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(58): " arg1="lm32_top" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v" arg3="58"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(100): " arg1="lm32_cpu" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v" arg3="100"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(77): " arg1="lm32_instruction_unit" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg3="77"  />
+    <postMsg mid="35901142" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(824): " arg1="display" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg3="824"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(113): " arg1="lm32_decoder" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v" arg3="113"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(601): " arg1="32" arg2="30" arg3="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v" arg4="601"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(69): " arg1="lm32_load_store_unit" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v" arg3="69"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v(56): " arg1="lm32_adder" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v" arg3="56"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v(55): " arg1="lm32_addsub" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v" arg3="55"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v(48): " arg1="pmi_addsub(pmi_data_width=32,pmi_result_width=32,pmi_family=&quot;MachXO2&quot;)" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v" arg3="48"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v(56): " arg1="lm32_logic_op" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v" arg3="56"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(56): " arg1="lm32_shifter" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v" arg3="56"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(149): " arg1="64" arg2="32" arg3="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v" arg4="149"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(56): " arg1="lm32_multiplier" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v" arg3="56"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v(64): " arg1="lm32_mc_arithmetic" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v" arg3="64"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(56): " arg1="lm32_interrupt" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg3="56"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(164): " arg1="3" arg2="1" arg3="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg4="164"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(165): " arg1="32" arg2="1" arg3="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg4="165"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(166): " arg1="32" arg2="1" arg3="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg4="166"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(87): " arg1="lm32_jtag" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v" arg3="87"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(69): " arg1="lm32_debug(watchpoints=32&apos;b0)" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v" arg3="69"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(57): " arg1="lm32_monitor" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v" arg3="57"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v(53): " arg1="lm32_monitor_ram" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v" arg3="53"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_1" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_2" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_3" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_4" arg2="D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(75): " arg1="jtag_cores" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v" arg3="75"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(60): " arg1="jtagconn16" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v" arg3="60"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v(51): " arg1="jtag_lm32" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v" arg3="51"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v(65): " arg1="TYPEA" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v" arg3="65"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(152): " arg1="CONTROL_DATAN" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v" arg3="152"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v(58): " arg1="asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v" arg3="58"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(66): " arg1="asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v" arg3="66"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(80): " arg1="gpio(DATA_WIDTH=32&apos;b0100000,INPUT_WIDTH=32&apos;b01,OUTPUT_WIDTH=32&apos;b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg3="80"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(180): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg4="180"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(181): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg4="181"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(182): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg4="182"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(183): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v" arg4="183"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(66): " arg1="tpio(DATA_WIDTH=1,IRQ_MODE=0)" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v" arg3="66"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(109): " arg1="IRQ_MASK" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v" arg3="109"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(639): " arg1="PIO_IN[31]" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="639"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(5): " arg1="display" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg3="5"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v(6): " arg1="hvsync" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v" arg3="6"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(78): " arg1="32" arg2="4" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="78"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(79): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="79"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(80): " arg1="32" arg2="1" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="80"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(136): " arg1="8" arg2="7" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="136"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(137): " arg1="8" arg2="7" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="137"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(138): " arg1="8" arg2="7" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="138"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(139): " arg1="8" arg2="7" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="139"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(140): " arg1="8" arg2="7" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="140"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(141): " arg1="8" arg2="7" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="141"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(151): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="151"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(158): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="158"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(165): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="165"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(168): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="168"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(171): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="171"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(174): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="174"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(177): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="177"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(180): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="180"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(187): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="187"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(190): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="190"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(193): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="193"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(196): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="196"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(199): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="199"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(202): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="202"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(205): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="205"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(208): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="208"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(211): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="211"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(214): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="214"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(217): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="217"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(220): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="220"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(228): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="228"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(231): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="231"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(234): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="234"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(237): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="237"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(240): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="240"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(243): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="243"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(250): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="250"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(253): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="253"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(256): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="256"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(259): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="259"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(262): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="262"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(265): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="265"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(268): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="268"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(271): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="271"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(274): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="274"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(277): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="277"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(280): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="280"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(283): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="283"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(291): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="291"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(294): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="294"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(297): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="297"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(300): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="300"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(303): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="303"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(306): " arg1="32" arg2="3" arg3="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v" arg4="306"  />
+    <postMsg mid="35901330" type="Warning" dynamic="4" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v(52): " arg1="16" arg2="24" arg3="segments" arg4="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v" arg5="52"  />
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = vga_leds.
+@Inferred core reset on ram net :registers
+
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(639): " arg1="PIO_IN[31]" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="639"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="0" arg0="" arg1="n50"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(109): " arg1="IRQ_MASK" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v" arg3="109"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\r_3__I_0/segments_fixed"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(862): " arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_lock_o_74" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg3="862"  />
+Removed duplicate sequential element \r_3__I_0/seg7_5(7 bit), because it is equivalent to \r_3__I_0/seg7_4
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state" arg1="gray"  />
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/state" arg1="one-hot"  />
+State machine has 3 reachable states with original encodings of:
+
+ 000 
+
+ 010 
+
+ 011 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 001
+
+ 010 -> 010
+
+ 011 -> 100
+
+
+
+
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\r_3__I_0/seg7_4"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\r_3__I_0/seg7_4"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\r_3__I_0/seg7_4"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\r_3__I_0/seg7_4"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\r_3__I_0/seg7_4"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\r_3__I_0/seg7_4"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\r_3__I_0/seg7_4"  />
+Removed duplicate sequential element \r_3__I_0/segments_fixed(16 bit), because it is equivalent to \r_3__I_0/green_leds_fixed
+
+Removed duplicate sequential element \r_3__I_0/red_leds_fixed(16 bit), because it is equivalent to \r_3__I_0/green_leds_fixed
+
+Removed duplicate sequential element \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/multiplier(32 bit), because it is equivalent to \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x
+
+Removed duplicate sequential element \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x(32 bit), because it is equivalent to \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/muliplicand
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_adr_o"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_adr_o"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o"  />
+######## Duplicated RTL RAM \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers to \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers_d0 to map to Lattice RAM.
+Core reset RAM implemented for net \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers.
+Core reset RAM implemented for net \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers_d0.
+######## Found 2 RTL RAMs in the design.
+######## Mapping RTL RAM \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers to 16 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers_d0 to 16 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Found 4 RTL RAMs in the design.
+######## Mapping RTL RAM n23008 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM n22881 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM n22878 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM n23011 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(743): " arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_lock_o_133" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v" arg3="743"  />
+SCUBA, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:38:34 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : d:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/bin/nt64/scuba.exe -w -n mult_32u_32u -lang verilog -bb -arch xo2c00 -type dspmult -pfu_mult -widtha 32 -widthb 32 -widthp 64 -pl_stages 0 
+    Circuit name     : mult_32u_32u
+    Module type      : dspmult
+    Module Version   : 4.2
+    Ports            : 
+	Inputs       : A[31:0], B[31:0]
+	Outputs      : P[63:0]
+    I/O buffer       : not inserted
+    EDIF output      : mult_32u_32u.edn
+    Verilog output   : mult_32u_32u.v
+    Verilog template : mult_32u_32u_tmpl.v
+    Verilog testbench: tb_mult_32u_32u_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mult_32u_32u.srp
+    Estimated Resource Usage:
+            LUT : 1198
+
+END   SCUBA Module Synthesis
+Analyzing Verilog file D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_32u_32u.v. VERI-1482
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(115): " arg1="a[31]" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v" arg3="115"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[7]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[6]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[5]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[4]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[3]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[2]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[1]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sram_data[0]"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(862): " arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_cti_o_i0" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v" arg3="862"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(584): " arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/state_i0" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v" arg3="584"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(283): " arg1="\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/ip_i0_i31" arg2="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v" arg3="283"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(275): " arg1="\mico_cpu_inst/arbiter/locked_90" arg2="e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v" arg3="275"  />
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neoprims.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neomacro.ngl'...
+GSR instance connected to net \mico_cpu_inst/counter[2].
+Duplicate register/latch removal. creset_20477 is a one-to-one match with creset_20397.
+Duplicate register/latch removal. creset_20381 is a one-to-one match with creset_20461.
+Duplicate register/latch removal. creset_20449 is a one-to-one match with creset.
+Duplicate register/latch removal. creset_20465 is a one-to-one match with creset_20385.
+Duplicate register/latch removal. creset_20373 is a one-to-one match with creset_20453.
+Duplicate register/latch removal. creset_20429 is a one-to-one match with creset_20509.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_i0_i0 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i0.
+Duplicate register/latch removal. creset_20481 is a one-to-one match with creset_20401.
+Duplicate register/latch removal. creset_20425 is a one-to-one match with creset_20505.
+Duplicate register/latch removal. creset_20421 is a one-to-one match with creset_20501.
+Duplicate register/latch removal. creset_20457 is a one-to-one match with creset_20377.
+Duplicate register/latch removal. creset_20417 is a one-to-one match with creset_20497.
+Duplicate register/latch removal. creset_20473 is a one-to-one match with creset_20393.
+Duplicate register/latch removal. creset_20413 is a one-to-one match with creset_20493.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i2 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_i0_i2.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i1 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_i0_i1.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_i0_i0 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_i0_i0.
+Duplicate register/latch removal. creset_20409 is a one-to-one match with creset_20489.
+Duplicate register/latch removal. creset_20405 is a one-to-one match with creset_20485.
+Duplicate register/latch removal. creset_20469 is a one-to-one match with creset_20389.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_i0_i1 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i1.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in vga_leds_drc.log.
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neoprims.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neomacro.ngl'...
+Loading NGO design 'lngotmp/pmi_addsubmo32324b7f59e.ngo'...
+Logic has been added to the IP to support JTAG capability.
+Loading NGO design 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2chub.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="xo2chub/tdoa" arg2="xo2chub/tdoa"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="xo2chub/cdn" arg2="xo2chub/cdn"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="xo2chub/ip_enable[15]" arg2="xo2chub/ip_enable[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="xo2chub/genblk7.un1_jtagf_u" arg2="xo2chub/genblk7.un1_jtagf_u"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="xo2chub/genblk7.un1_jtagf_u_1" arg2="xo2chub/genblk7.un1_jtagf_u_1"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="5"  />
+
+Design Results:
+   4949 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file mico_cpu_impl1.ngd.
+
+################### Begin Area Report (vga_leds)######################
+Number of register bits => 1353 of 7209 (18 % )
+AND2 => 19
+BB => 8
+CCU2D => 90
+DP8KC => 4
+DPR16X4C => 36
+EHXPLLJ => 1
+FADD2B => 151
+FD1P3AX => 956
+FD1P3AY => 31
+FD1P3DX => 3
+FD1P3IX => 152
+FD1S3AX => 156
+FD1S3AY => 1
+FD1S3BX => 4
+FD1S3DX => 43
+FD1S3IX => 7
+GSR => 1
+IB => 1
+INV => 4
+L6MUX21 => 31
+LUT4 => 2503
+MULT2 => 136
+MUX21 => 33
+OB => 36
+PFUMX => 430
+pmi_addsubMo32324b7f59e => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 6
+  Net : main_pll_inst/w_clk_cpu, loads : 1299
+  Net : main_pll_inst/w_clk_video, loads : 63
+  Net : r_3__I_0/u_hvsync/w_hsync, loads : 14
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtck, loads : 1
+  Net : CLK50MHZ_c, loads : 1
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/reg_update, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 77
+Top 10 highest fanout Clock Enables:
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_679, loads : 33
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_980, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable_558, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_709, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_438, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_711, loads : 30
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_985, loads : 23
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_972, loads : 22
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_878, loads : 21
+  Net : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_339, loads : 19
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_984, loads : 240
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_958, loads : 133
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/decoder/n41417, loads : 116
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_0, loads : 89
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_1, loads : 80
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_1, loads : 77
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_2, loads : 76
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/instruction_d_31, loads : 76
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_0, loads : 75
+  Net : mico_cpu_inst/arbiter/selected_0, loads : 74
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets                          |             |             |
+\mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_|             |             |
+update]                                 |  200.000 MHz|  358.809 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets \r_3__I_0/w_hsync]       |  200.000 MHz|  125.881 MHz|     5 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets w_clk_video]             |  200.000 MHz|   67.995 MHz|    13 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets w_clk_cpu]               |  200.000 MHz|   36.536 MHz|    21 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+3 constraints not met.
+
+
+Peak Memory Usage: 129.180  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 14.922  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-7000HC -t TQFP144 -s 5 -oc Commercial   "mico_cpu_impl1.ngd" -o "mico_cpu_impl1_map.ncd" -pr "mico_cpu_impl1.prf" -mp "mico_cpu_impl1.mrp" -lpf "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/impl1/mico_cpu_impl1.lpf" -lpf "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.1.112
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: mico_cpu_impl1.ngd
+   Picdevice="LCMXO2-7000HC"
+
+   Pictype="TQFP144"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HCTQFP144, Performance used: 5.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:   1404 out of  7209 (19%)
+      PFU registers:         1404 out of  6864 (20%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:      1848 out of  3432 (54%)
+      SLICEs as Logic/ROM:   1740 out of  3432 (51%)
+      SLICEs as RAM:          108 out of  2574 (4%)
+      SLICEs as Carry:        412 out of  3432 (12%)
+   Number of LUT4s:        3661 out of  6864 (53%)
+      Number used as logic LUTs:        2621
+      Number used as distributed RAM:   216
+      Number used as ripple logic:      824
+      Number used as shift registers:     0
+   Number of PIO sites used: 45 + 4(JTAG) out of 115 (43%)
+   Number of block RAMs:  4 out of 26 (15%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      Yes
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  6
+     Net w_clk_cpu: 850 loads, 850 rising, 0 falling (Driver: main_pll_inst/PLLInst_0 )
+     Net CLK50MHZ_c: 1 loads, 1 rising, 0 falling (Driver: PIO CLK50MHZ )
+     Net w_clk_video: 36 loads, 36 rising, 0 falling (Driver: main_pll_inst/PLLInst_0 )
+     Net r_3__I_0/w_hsync: 8 loads, 8 rising, 0 falling (Driver: r_3__I_0/u_hvsync/hsync_25 )
+     Net jtaghub16_jtck: 40 loads, 0 rising, 40 falling (Driver: xo2chub/genblk7.jtagf_u )
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update: 1 loads, 0 rising, 1 falling (Driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\i10/i1 )
+   Number of Clock Enables:  80
+     Net w_clk_cpu_enable_20: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_23: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_25: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_107: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_116: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_137: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_183: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_188: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_265: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_279: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_314: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_323: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_354: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_460: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_537: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_576: 1 loads, 1 LSLICEs
+     Net counter_2_adj_3985: 1 loads, 1 LSLICEs
+     Net r_3__I_0/red_leds_fixed_15__N_3476: 8 loads, 8 LSLICEs
+     Net mico_cpu_inst/w_clk_cpu_enable_696: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/data_bus_error_exception_N_1225: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_349: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_1: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_648: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_339: 10 loads, 10 LSLICEs
+     Net mico_cpu_inst/w_clk_cpu_enable_900: 8 loads, 8 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/tmp_dat_o_nxt_31__N_3127: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/PIO_OUT_7__N_3327: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_363: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/w_clk_cpu_enable_303: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_527: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_566: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_577: 2 loads, 2 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_619: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/PIO_OUT_15__N_3318: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/arbiter/w_clk_cpu_enable_547: 1 loads, 1 LSLICEs
+     Net jtaghub16_jupdate: 8 loads, 8 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_985: 27 loads, 27 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_984: 163 loads, 163 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_972: 30 loads, 30 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/cycles_5__N_2495: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_711: 34 loads, 34 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_878: 33 loads, 33 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/valid_f_N_1227: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/eba_31__N_1101: 12 loads, 12 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/deba_31__N_1120: 12 loads, 12 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/memop_pc_w_31__N_1219: 15 loads, 15 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_697: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_245: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_886: 19 loads, 19 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_638: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958: 32 loads, 32 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/dc_re_N_2934: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_623: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_865: 36 loads, 36 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_216: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_27: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_438: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_979: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_872: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_914: 26 loads, 26 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_763: 15 loads, 15 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_769: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_270: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_271: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jrx_csr_read_data_8__N_2865: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_275: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_330: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_983: 22 loads, 22 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_709: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_255: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_273: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_982: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable_558: 32 loads, 32 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable_587: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_679: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_980: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_175: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_178: 1 loads, 1 LSLICEs
+     Net xo2chub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net xo2chub/er1_shift_reg8: 10 loads, 10 LSLICEs
+   Number of LSRs:  27
+     Net n41488: 1 loads, 1 LSLICEs
+     Net w_locked: 17 loads, 17 LSLICEs
+     Net counter_2_adj_3985: 8 loads, 0 LSLICEs
+     Net r_3__I_0/n41378: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_0: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/n633: 2 loads, 2 LSLICEs
+     Net mico_cpu_inst/n26128: 8 loads, 8 LSLICEs
+     Net jtaghub16_jrstn: 39 loads, 39 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/exception_m: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n22503: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/branch_taken_m: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41428: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n22501: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_972: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n31636: 2 loads, 2 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n26142: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n24298: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__N_505: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n22524: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958: 19 loads, 19 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n26126: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n26122: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n22517: 33 loads, 33 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/n24867: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_679: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/n22505: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/n35807: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_984: 173 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41417: 117 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958: 116 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_0: 89 loads
+     Net read_idx_0_d_0: 81 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_1: 80 loads
+     Net read_idx_1_d_0: 80 loads
+     Net read_idx_1_d_1: 78 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_d_31: 77 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_1: 77 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 3 secs  
+Total REAL Time: 3 secs  
+Peak Memory Usage: 88 MB
+
+Dumping design to file mico_cpu_impl1_map.ncd.
+
+ncd2vdb "mico_cpu_impl1_map.ncd" ".vdbs/mico_cpu_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+
+trce -f "mico_cpu_impl1.mt" -o "mico_cpu_impl1.tw1" "mico_cpu_impl1_map.ncd" "mico_cpu_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.1.112
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file mico_cpu_impl1_map.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:38:50 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o mico_cpu_impl1.tw1 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml mico_cpu_impl1_map.ncd mico_cpu_impl1.prf 
+Design file:     mico_cpu_impl1_map.ncd
+Preference file: mico_cpu_impl1.prf
+Device,speed:    LCMXO2-7000HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4098  Score: 29894007
+Cumulative negative slack: 29894007
+
+Constraints cover 20841497 paths, 3 nets, and 15330 connections (94.07% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:38:51 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o mico_cpu_impl1.tw1 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml mico_cpu_impl1_map.ncd mico_cpu_impl1.prf 
+Design file:     mico_cpu_impl1_map.ncd
+Preference file: mico_cpu_impl1.prf
+Device,speed:    LCMXO2-7000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 20841497 paths, 3 nets, and 16012 connections (98.26% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4098 (setup), 0 (hold)
+Score: 29894007 (setup), 0 (hold)
+Cumulative negative slack: 29894007 (29894007+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+mpartrce -p "mico_cpu_impl1.p2t" -f "mico_cpu_impl1.p3t" -tf "mico_cpu_impl1.pt" "mico_cpu_impl1_map.ncd" "mico_cpu_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "mico_cpu_impl1_map.ncd"
+Thu Nov 30 05:38:52 2017
+
+PAR: Place And Route Diamond (64-bit) 3.10.1.112.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF mico_cpu_impl1_map.ncd mico_cpu_impl1.dir/5_1.ncd mico_cpu_impl1.prf
+Preference file: mico_cpu_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file mico_cpu_impl1_map.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 5
+Loading device for application par from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   45+4(JTAG)/336     15% used
+                  45+4(JTAG)/115     43% bonded
+
+   SLICE           1848/3432         53% used
+
+   GSR                1/1           100% used
+   JTAG               1/1           100% used
+   EBR                4/26           15% used
+   PLL                1/2            50% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 5222
+Number of Connections: 16296
+
+Pin Constraint Summary:
+   45 out of 45 pins locked (100% locked).
+
+The following 3 signals are selected to use the primary clock routing resources:
+    w_clk_video (driver: main_pll_inst/PLLInst_0, clk load #: 35)
+    w_clk_cpu (driver: main_pll_inst/PLLInst_0, clk load #: 850)
+    jtaghub16_jtck (driver: xo2chub/genblk7.jtagf_u, clk load #: 40)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_984 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1624, clk load #: 0, sr load #: 0, ce load #: 163)
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1929, clk load #: 0, sr load #: 19, ce load #: 32)
+    jtaghub16_jrstn (driver: xo2chub/genblk7.jtagf_u, clk load #: 0, sr load #: 39, ce load #: 0)
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_865 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_2129, clk load #: 0, sr load #: 0, ce load #: 36)
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_711 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1962, clk load #: 0, sr load #: 0, ce load #: 34)
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_878 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1242, clk load #: 0, sr load #: 0, ce load #: 33)
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n22517 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/SLICE_942, clk load #: 0, sr load #: 33, ce load #: 0)
+    mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable_558 (driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/SLICE_1981, clk load #: 0, sr load #: 0, ce load #: 32)
+
+Signal counter_2_adj_3985 is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 7 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 4318961.
+Finished Placer Phase 1.  REAL time: 22 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  4240466
+Finished Placer Phase 2.  REAL time: 24 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 1 out of 2 (50%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "w_clk_video" from CLKOP on comp "main_pll_inst/PLLInst_0" on PLL site "LPLL", clk load = 35
+  PRIMARY "w_clk_cpu" from CLKOS on comp "main_pll_inst/PLLInst_0" on PLL site "LPLL", clk load = 850
+  PRIMARY "jtaghub16_jtck" from JTCK on comp "xo2chub/genblk7.jtagf_u" on site "JTAG", clk load = 40
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_984" from F1 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1624" on site "R21C20A", clk load = 0, ce load = 163, sr load = 0
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958" from F1 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1929" on site "R24C14D", clk load = 0, ce load = 32, sr load = 19
+  SECONDARY "jtaghub16_jrstn" from JRSTN on comp "xo2chub/genblk7.jtagf_u" on site "JTAG", clk load = 0, ce load = 0, sr load = 39
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_865" from F1 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_2129" on site "R14C20A", clk load = 0, ce load = 36, sr load = 0
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_711" from F0 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1962" on site "R14C20D", clk load = 0, ce load = 34, sr load = 0
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_878" from F1 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1242" on site "R14C18C", clk load = 0, ce load = 33, sr load = 0
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n22517" from F1 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/SLICE_942" on site "R21C18D", clk load = 0, ce load = 0, sr load = 33
+  SECONDARY "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable_558" from F1 on comp "mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/SLICE_1981" on site "R14C20B", clk load = 0, ce load = 32, sr load = 0
+
+  PRIMARY  : 3 out of 8 (37%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   45 + 4(JTAG) out of 336 (14.6%) PIO sites used.
+   45 + 4(JTAG) out of 115 (42.6%) bonded PIO sites used.
+   Number of PIO comps: 45; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 0 / 28 (  0%)  | -          | -         |
+| 1        | 29 / 29 (100%) | 2.5V       | -         |
+| 2        | 2 / 29 (  6%)  | 2.5V       | -         |
+| 3        | 4 / 9 ( 44%)   | 2.5V       | -         |
+| 4        | 10 / 10 (100%) | 2.5V       | -         |
+| 5        | 0 / 10 (  0%)  | -          | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 23 secs 
+
+Dumping design to file mico_cpu_impl1.dir/5_1.ncd.
+
+0 connections routed; 16296 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=r_3__I_0/w_hsync loads=9 clock_loads=8&#xA;   Signal=mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update loads=1 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 29 secs 
+
+Start NBR router at 05:39:22 11/30/17
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 05:39:22 11/30/17
+
+Start NBR section for initial routing at 05:39:24 11/30/17
+Level 1, iteration 1
+147(0.04%) conflicts; 12758(78.29%) untouched conns; 24348381 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11.022ns/-24348.382ns; real time: 35 secs 
+Level 2, iteration 1
+256(0.07%) conflicts; 10237(62.82%) untouched conns; 24253380 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11.105ns/-24253.380ns; real time: 37 secs 
+Level 3, iteration 1
+403(0.11%) conflicts; 3315(20.34%) untouched conns; 27005497 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -10.672ns/-27005.498ns; real time: 41 secs 
+Level 4, iteration 1
+623(0.16%) conflicts; 24(0.15%) untouched conns; 27105979 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.629ns/-27105.979ns; real time: 49 secs 
+Level 4, iteration 2
+402(0.11%) conflicts; 33(0.20%) untouched conns; 26946356 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.589ns/-26946.357ns; real time: 1 mins 1 secs 
+
+Info: Initial congestion level at 75% usage is 13
+Info: Initial congestion area  at 75% usage is 221 (22.10%)
+
+Start NBR section for normal routing at 05:39:53 11/30/17
+Level 4, iteration 1
+76(0.02%) conflicts; 0(0.00%) untouched conn; 28905562 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.582ns/-28905.562ns; real time: 1 mins 4 secs 
+Level 4, iteration 2
+24(0.01%) conflicts; 0(0.00%) untouched conn; 29467241 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29467.241ns; real time: 1 mins 5 secs 
+Level 4, iteration 3
+13(0.00%) conflicts; 0(0.00%) untouched conn; 29538302 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29538.302ns; real time: 1 mins 6 secs 
+Level 4, iteration 4
+4(0.00%) conflicts; 0(0.00%) untouched conn; 29538302 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29538.302ns; real time: 1 mins 6 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 29697828 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29697.828ns; real time: 1 mins 7 secs 
+Level 4, iteration 6
+0(0.00%) conflict; 0(0.00%) untouched conn; 29697828 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29697.828ns; real time: 1 mins 7 secs 
+
+Start NBR section for performance tuning (iteration 1) at 05:39:59 11/30/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 29697828 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29697.828ns; real time: 1 mins 7 secs 
+
+Start NBR section for re-routing at 05:39:59 11/30/17
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 29431262 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.789ns/-29431.262ns; real time: 1 mins 10 secs 
+
+Start NBR section for post-routing at 05:40:02 11/30/17
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 8022 (49.23%)
+  Estimated worst slack<setup> : -9.789ns
+  Timing score<setup> : 32493792
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=r_3__I_0/w_hsync loads=9 clock_loads=8&#xA;   Signal=mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update loads=1 clock_loads=1"  />
+
+Total CPU time 1 mins 13 secs 
+Total REAL time: 1 mins 15 secs 
+Completely routed.
+End of route.  16296 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 32493792 
+
+Dumping design to file mico_cpu_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -9.789
+PAR_SUMMARY::Timing score<setup/<ns>> = 32493.792
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.217
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 1 mins 14 secs 
+Total REAL time to completion: 1 mins 16 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "mico_cpu_impl1.pt" -o "mico_cpu_impl1.twr" "mico_cpu_impl1.ncd" "mico_cpu_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.1.112
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file mico_cpu_impl1.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:40:10 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o mico_cpu_impl1.twr -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml mico_cpu_impl1.ncd mico_cpu_impl1.prf 
+Design file:     mico_cpu_impl1.ncd
+Preference file: mico_cpu_impl1.prf
+Device,speed:    LCMXO2-7000HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4139  Score: 32493792
+Cumulative negative slack: 32493792
+
+Constraints cover 20841497 paths, 3 nets, and 16016 connections (98.28% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:40:10 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o mico_cpu_impl1.twr -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml mico_cpu_impl1.ncd mico_cpu_impl1.prf 
+Design file:     mico_cpu_impl1.ncd
+Preference file: mico_cpu_impl1.prf
+Device,speed:    LCMXO2-7000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 20841497 paths, 3 nets, and 16016 connections (98.28% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4139 (setup), 0 (hold)
+Score: 32493792 (setup), 0 (hold)
+Cumulative negative slack: 32493792 (32493792+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 2 secs 
+
+bitgen -f "mico_cpu_impl1.t2b" -w "mico_cpu_impl1.ncd" -jedec "mico_cpu_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.1.112
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file mico_cpu_impl1.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 5
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from mico_cpu_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "mico_cpu_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 

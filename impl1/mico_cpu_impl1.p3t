@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "mico_cpu_impl1.log"
+-o "mico_cpu_impl1.csv"
+-pr "mico_cpu_impl1.prf"

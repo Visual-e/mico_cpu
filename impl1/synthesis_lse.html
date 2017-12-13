@@ -1,0 +1,630 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.10.1.112
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Nov 30 05:38:29 2017
+
+
+Command Line:  synthesis -f mico_cpu_impl1_lattice.synproj -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HC.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HC
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = vga_leds.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu (searchpath added)
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu (searchpath added)
+-p D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/impl1 (searchpath added)
+-p E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu (searchpath added)
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/display.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/hvsync.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/main_pll.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/vga_leds.v
+Verilog design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v
+NGD file = mico_cpu_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+EDIF design file = E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/main_pll.edn
+Technology check ok...
+
+Analyzing Verilog file D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Reading EDIF file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.edn
+
+Creating library ORCLIB
+
+Creating cell VLO
+
+Creating cell EHXPLLJ
+
+Creating cell main_pll
+
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v. VERI-1482
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(9): identifier NUM_RED_LEDS is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(10): identifier NUM_GREEN_LEDS is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(11): identifier NUM_SEGMENTS is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(32): identifier r_hsync is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(33): identifier r_vsync is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(34): identifier red_word is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(35): identifier green_word is used before its declaration. VERI-1875
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(36): identifier blue_word is used before its declaration. VERI-1875
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v. VERI-1482
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v. VERI-1482
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v. VERI-1482
+Analyzing Verilog file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v. VERI-1482
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(46): analyzing included file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(327): analyzing included file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(52): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(54): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(57): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typeb.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(58): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(59): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(53): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(54): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v(60): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(60): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(61): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(52): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(64): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v(49): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(65): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(66): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(94): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(791): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v. VERI-1328
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(653): attribute target identifier preserve_driver not found in this scope. VERI-1407
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(652): attribute target identifier preserve_signal not found in this scope. VERI-1407
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v(54): assignment to input valueVERI-1214
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(67): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v(52): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(68): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(53): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(186): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(69): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(56): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(336): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(70): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v(57): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(71): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(71): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(380): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(72): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(130): attribute target identifier preserve_signal not found in this scope. VERI-1407
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(73): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(63): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(283): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(74): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(76): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(79): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(82): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(84): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(52): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(277): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(86): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(50): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(51): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(87): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v(51): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(104): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v(52): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v. VERI-1328
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v(53): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(328): analyzing included file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(64): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(112): parameter declaration becomes local in asram_core with formal parameter declaration list. VERI-1199
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(113): parameter declaration becomes local in asram_core with formal parameter declaration list. VERI-1199
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(114): parameter declaration becomes local in asram_core with formal parameter declaration list. VERI-1199
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(329): analyzing included file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v(56): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(330): analyzing included file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(79): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(176): parameter declaration becomes local in gpio with formal parameter declaration list. VERI-1199
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(331): analyzing included file e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v. VERI-1328
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(65): analyzing included file E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v. VERI-1328
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(87): parameter declaration becomes local in tpio with formal parameter declaration list. VERI-1199
+INFO - synthesis: The default VHDL library search path is now "E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/impl1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): vga_leds
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v(2): compiling module vga_leds. VERI-1018
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v(8): compiling module main_pll. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKI_DIV=2,CLKFB_DIV=3,CLKOS_DIV=6,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=7,CLKOS_CPHASE=5). VERI-1018
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(334): compiling module mico_cpu. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): compiling module BB. VERI-1018
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(48): compiling module arbiter2. VERI-1018
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(289): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(293): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(297): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(301): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(305): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(309): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(313): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(316): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(317): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(318): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(321): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(322): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(323): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(507): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(512): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(58): compiling module lm32_top. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(100): compiling module lm32_cpu. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(77): compiling module lm32_instruction_unit. VERI-1018
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(824): system task display ignored for synthesis. VERI-1142
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(113): compiling module lm32_decoder. VERI-1018
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(601): expression size 32 truncated to fit in target size 30. VERI-1209
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(69): compiling module lm32_load_store_unit. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v(56): compiling module lm32_adder. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v(55): compiling module lm32_addsub. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v(48): compiling module pmi_addsub(pmi_data_width=32,pmi_result_width=32,pmi_family="MachXO2"). VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v(56): compiling module lm32_logic_op. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(56): compiling module lm32_shifter. VERI-1018
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(149): expression size 64 truncated to fit in target size 32. VERI-1209
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(56): compiling module lm32_multiplier. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v(64): compiling module lm32_mc_arithmetic. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(56): compiling module lm32_interrupt. VERI-1018
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(164): expression size 3 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(165): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(166): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(87): compiling module lm32_jtag. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(69): compiling module lm32_debug(watchpoints=32'b0). VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(57): compiling module lm32_monitor. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v(53): compiling module lm32_monitor_ram. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_2. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_3. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
+INFO - synthesis: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_4. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(75): compiling module jtag_cores. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(60): compiling module jtagconn16. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v(51): compiling module jtag_lm32. VERI-1018
+INFO - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v(65): compiling module TYPEA. VERI-1018
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(152): input port CONTROL_DATAN is not connected on this instance. VDB-1013
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v(58): compiling module asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1). VERI-1018
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(66): compiling module asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1). VERI-1018
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(80): compiling module gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1). VERI-1018
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(180): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(181): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(182): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(183): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(66): compiling module tpio(DATA_WIDTH=1,IRQ_MODE=0). VERI-1018
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(109): net IRQ_MASK does not have a driver. VDB-1002
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(639): input port PIO_IN[31] is not connected on this instance. VDB-1013
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(5): compiling module display. VERI-1018
+INFO - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v(6): compiling module hvsync. VERI-1018
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(78): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(79): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(80): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(136): expression size 8 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(137): expression size 8 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(138): expression size 8 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(139): expression size 8 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(140): expression size 8 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(141): expression size 8 truncated to fit in target size 7. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(151): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(158): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(165): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(168): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(171): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(174): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(177): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(180): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(187): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(190): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(193): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(196): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(199): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(202): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(205): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(208): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(211): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(214): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(217): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(220): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(228): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(231): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(234): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(237): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(240): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(243): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(250): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(253): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(256): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(259): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(262): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(265): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(268): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(271): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(274): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(277): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(280): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(283): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(291): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(294): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(297): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(300): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(303): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(306): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v(52): actual bit length 16 differs from formal bit length 24 for port segments. VERI-1330
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = vga_leds.
+@Inferred core reset on ram net :registers
+
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(639): input port PIO_IN[31] is not connected on this instance. VDB-1013
+WARNING - synthesis: net n50 does not have a driver. VDB-1002
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(109): net IRQ_MASK does not have a driver. VDB-1002
+WARNING - synthesis: Bit 0 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \r_3__I_0/segments_fixed is stuck at Zero
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(862): Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_lock_o_74 is stuck at Zero. VDB-5013
+Removed duplicate sequential element \r_3__I_0/seg7_5(7 bit), because it is equivalent to \r_3__I_0/seg7_4
+
+INFO - synthesis: Extracted state machine for register '\mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state' with gray encoding
+State machine has 3 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+INFO - synthesis: Extracted state machine for register '\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/state' with one-hot encoding
+State machine has 3 reachable states with original encodings of:
+
+ 000 
+
+ 010 
+
+ 011 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 001
+
+ 010 -> 010
+
+ 011 -> 100
+
+
+
+
+WARNING - synthesis: Bit 6 of Register \r_3__I_0/seg7_4 is stuck at One
+WARNING - synthesis: Bit 0 of Register \r_3__I_0/seg7_4 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \r_3__I_0/seg7_4 is stuck at One
+WARNING - synthesis: Bit 2 of Register \r_3__I_0/seg7_4 is stuck at One
+WARNING - synthesis: Bit 3 of Register \r_3__I_0/seg7_4 is stuck at One
+WARNING - synthesis: Bit 4 of Register \r_3__I_0/seg7_4 is stuck at One
+WARNING - synthesis: Bit 5 of Register \r_3__I_0/seg7_4 is stuck at One
+Removed duplicate sequential element \r_3__I_0/segments_fixed(16 bit), because it is equivalent to \r_3__I_0/green_leds_fixed
+
+Removed duplicate sequential element \r_3__I_0/red_leds_fixed(16 bit), because it is equivalent to \r_3__I_0/green_leds_fixed
+
+Removed duplicate sequential element \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/multiplier(32 bit), because it is equivalent to \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x
+
+Removed duplicate sequential element \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x(32 bit), because it is equivalent to \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/muliplicand
+
+WARNING - synthesis: Bit 30 of Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_adr_o is stuck at Zero
+WARNING - synthesis: Bit 31 of Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_adr_o is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o is stuck at One
+WARNING - synthesis: Bit 1 of Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o is stuck at One
+WARNING - synthesis: Bit 2 of Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o is stuck at One
+######## Duplicated RTL RAM \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers to \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers_d0 to map to Lattice RAM.
+Core reset RAM implemented for net \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers.
+Core reset RAM implemented for net \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers_d0.
+######## Found 2 RTL RAMs in the design.
+######## Mapping RTL RAM \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers to 16 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/registers_d0 to 16 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Found 4 RTL RAMs in the design.
+######## Mapping RTL RAM n23008 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM n22881 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM n22878 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM n23011 to 1 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(743): Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_lock_o_133 is stuck at Zero. VDB-5013
+Analyzing Verilog file D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_32u_32u.v. VERI-1482
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(115): input port a[31] is not connected on this instance. VDB-1013
+WARNING - synthesis: Skipping pad insertion on sram_data[7] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[6] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[5] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[4] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[3] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[2] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[1] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on sram_data[0] due to black_box_pad_pin attribute.
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(862): Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_cti_o_i0 is stuck at One. VDB-5014
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(584): Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/state_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(283): Register \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/ip_i0_i31 is stuck at Zero. VDB-5013
+WARNING - synthesis: e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(275): Register \mico_cpu_inst/arbiter/locked_90 is stuck at Zero. VDB-5013
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neoprims.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neomacro.ngl'...
+GSR instance connected to net \mico_cpu_inst/counter[2].
+Duplicate register/latch removal. creset_20477 is a one-to-one match with creset_20397.
+Duplicate register/latch removal. creset_20381 is a one-to-one match with creset_20461.
+Duplicate register/latch removal. creset_20449 is a one-to-one match with creset.
+Duplicate register/latch removal. creset_20465 is a one-to-one match with creset_20385.
+Duplicate register/latch removal. creset_20373 is a one-to-one match with creset_20453.
+Duplicate register/latch removal. creset_20429 is a one-to-one match with creset_20509.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_i0_i0 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i0.
+Duplicate register/latch removal. creset_20481 is a one-to-one match with creset_20401.
+Duplicate register/latch removal. creset_20425 is a one-to-one match with creset_20505.
+Duplicate register/latch removal. creset_20421 is a one-to-one match with creset_20501.
+Duplicate register/latch removal. creset_20457 is a one-to-one match with creset_20377.
+Duplicate register/latch removal. creset_20417 is a one-to-one match with creset_20497.
+Duplicate register/latch removal. creset_20473 is a one-to-one match with creset_20393.
+Duplicate register/latch removal. creset_20413 is a one-to-one match with creset_20493.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i2 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_i0_i2.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i1 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_i0_i1.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_i0_i0 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_i0_i0.
+Duplicate register/latch removal. creset_20409 is a one-to-one match with creset_20489.
+Duplicate register/latch removal. creset_20405 is a one-to-one match with creset_20485.
+Duplicate register/latch removal. creset_20469 is a one-to-one match with creset_20389.
+Duplicate register/latch removal. \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_i0_i1 is a one-to-one match with \mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op_x_i0_i1.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in vga_leds_drc.log.
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neoprims.ngl'...
+Loading NGL library 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/data/neomacro.ngl'...
+Loading NGO design 'lngotmp/pmi_addsubmo32324b7f59e.ngo'...
+Logic has been added to the IP to support JTAG capability.
+Loading NGO design 'D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2chub.ngl'...
+WARNING - synthesis: logical net 'xo2chub/tdoa' has no load.
+WARNING - synthesis: logical net 'xo2chub/cdn' has no load.
+WARNING - synthesis: logical net 'xo2chub/ip_enable[15]' has no load.
+WARNING - synthesis: logical net 'xo2chub/genblk7.un1_jtagf_u' has no load.
+WARNING - synthesis: logical net 'xo2chub/genblk7.un1_jtagf_u_1' has no load.
+WARNING - synthesis: DRC complete with 5 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file mico_cpu_impl1.ngd.
+
+################### Begin Area Report (vga_leds)######################
+Number of register bits => 1353 of 7209 (18 % )
+AND2 => 19
+BB => 8
+CCU2D => 90
+DP8KC => 4
+DPR16X4C => 36
+EHXPLLJ => 1
+FADD2B => 151
+FD1P3AX => 956
+FD1P3AY => 31
+FD1P3DX => 3
+FD1P3IX => 152
+FD1S3AX => 156
+FD1S3AY => 1
+FD1S3BX => 4
+FD1S3DX => 43
+FD1S3IX => 7
+GSR => 1
+IB => 1
+INV => 4
+L6MUX21 => 31
+LUT4 => 2503
+MULT2 => 136
+MUX21 => 33
+OB => 36
+PFUMX => 430
+pmi_addsubMo32324b7f59e => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 6
+  Net : main_pll_inst/w_clk_cpu, loads : 1299
+  Net : main_pll_inst/w_clk_video, loads : 63
+  Net : r_3__I_0/u_hvsync/w_hsync, loads : 14
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtck, loads : 1
+  Net : CLK50MHZ_c, loads : 1
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/reg_update, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 77
+Top 10 highest fanout Clock Enables:
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_679, loads : 33
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_980, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable_558, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_709, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_438, loads : 32
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_711, loads : 30
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_985, loads : 23
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_972, loads : 22
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_878, loads : 21
+  Net : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_339, loads : 19
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_984, loads : 240
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enable_958, loads : 133
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/decoder/n41417, loads : 116
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_0, loads : 89
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_1, loads : 80
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_1, loads : 77
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_2, loads : 76
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/instruction_d_31, loads : 76
+  Net : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_0, loads : 75
+  Net : mico_cpu_inst/arbiter/selected_0, loads : 74
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets                          |             |             |
+\mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_|             |             |
+update]                                 |  200.000 MHz|  358.809 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets \r_3__I_0/w_hsync]       |  200.000 MHz|  125.881 MHz|     5 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets w_clk_video]             |  200.000 MHz|   67.995 MHz|    13 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets w_clk_cpu]               |  200.000 MHz|   36.536 MHz|    21 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+3 constraints not met.
+
+
+Peak Memory Usage: 129.180  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 14.922  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

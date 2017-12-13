@@ -1,0 +1,25 @@
+PAR: Place And Route Diamond (64-bit) 3.10.1.112.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Nov 30 05:38:52 2017
+
+D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f mico_cpu_impl1.p2t
+mico_cpu_impl1_map.ncd mico_cpu_impl1.dir mico_cpu_impl1.prf -gui -msgset
+E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml
+
+
+Preference file: mico_cpu_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -9.789       32493792     0.217        0            01:16        Success
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 1 mins 16 secs 
+
+par done!

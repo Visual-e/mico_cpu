@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSLIB>
+<MSB_FILE name="mico_cpu.msb" path="../mico_cpu/soc"/>
+<MemorySections UCflag="false">
+<Section DEPLOY="yes" Name=".text" Value="sram"/>
+<Section Name=".rodata" Value="sram"/>
+<Section Name=".data" Value="sram"/>
+</MemorySections>
+<LinkerSettings>
+<Param Name="UserDefinedLinkerFile" Value=""/>
+</LinkerSettings>
+<STDIO_Redirection>
+<Param InstanceName="LM32" Name="stdin" Text="JTAG UART"/>
+<Param InstanceName="LM32" Name="stdout" Text="JTAG UART"/>
+<Param InstanceName="LM32" Name="stderr" Text="JTAG UART"/>
+</STDIO_Redirection>
+<LibSettings>
+<Param Name="SyslibOption" Value="on"/>
+<Param Name="USE_SMALL_LIBC" Value="FALSE"/>
+<Param Name="USE_STANDALONE_SMALL_PRINTF" Value="TRUE"/>
+</LibSettings>
+<PREPROCESSOR_IFDEF>
+<Param IFDEF_NAME="__MICOGPIO_USER_IRQ_HANDLER__" Value="off"/>
+</PREPROCESSOR_IFDEF>
+</SYSLIB>

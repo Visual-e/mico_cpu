@@ -1,0 +1,277 @@
+---------------------------------------------------
+Report for cell vga_leds
+   Instance path: vga_leds
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1848.00        100.0
+                                  LUT4	    2621.00        100.0
+                               DISTRAM	     108.00        100.0
+                                 IOBUF	         45        100.0
+                                PFUREG	       1404        100.0
+                                RIPPLE	        412        100.0
+                                   EBR	          4        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               xo2chub	          1         1.4
+                              mico_cpu	          1        82.2
+                              main_pll	          1         0.0
+                               display	          1         7.4
+---------------------------------------------------
+Report for cell main_pll
+   Instance path: vga_leds/main_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell display
+   Instance path: vga_leds/r_3__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     136.00         7.4
+                                  LUT4	     238.00         9.1
+                                PFUREG	         75         5.3
+                                RIPPLE	         13         3.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                hvsync	          1         2.4
+---------------------------------------------------
+Report for cell hvsync
+   Instance path: vga_leds/r_3__I_0/u_hvsync
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      43.75         2.4
+                                  LUT4	      60.00         2.3
+                                PFUREG	         25         1.8
+                                RIPPLE	         13         3.2
+---------------------------------------------------
+Report for cell mico_cpu
+   Instance path: vga_leds/mico_cpu_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1519.82        82.2
+                                  LUT4	    2262.00        86.3
+                                PFUREG	       1262        89.9
+                                RIPPLE	        382        92.7
+                                   EBR	          4        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              lm32_top	          1        73.8
+gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)	          1         0.3
+asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)	          1         4.5
+                              arbiter2	          1         2.0
+---------------------------------------------------
+Report for cell asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)
+   Instance path: vga_leds/mico_cpu_inst/sramASRAM_DAT_O_31__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      83.42         4.5
+                                  LUT4	     161.33         6.2
+                                PFUREG	         69         4.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)	          1         4.5
+---------------------------------------------------
+Report for cell asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)
+   Instance path: vga_leds/mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      83.42         4.5
+                                  LUT4	     161.33         6.2
+                                PFUREG	         69         4.9
+---------------------------------------------------
+Report for cell gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)
+   Instance path: vga_leds/mico_cpu_inst/gpioGPIO_DAT_O_31__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.17         0.3
+                                  LUT4	       2.00         0.1
+                                PFUREG	         17         1.2
+---------------------------------------------------
+Report for cell arbiter2
+   Instance path: vga_leds/mico_cpu_inst/arbiter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.58         2.0
+                                  LUT4	      94.33         3.6
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell lm32_top
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1363.15        73.8
+                                  LUT4	    1931.50        73.7
+                                PFUREG	       1171        83.4
+                                RIPPLE	        382        92.7
+                                   EBR	          4        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            jtag_cores	          1         0.9
+                          lm32_monitor	          1         1.9
+                              lm32_cpu	          1        70.6
+---------------------------------------------------
+Report for cell jtag_cores
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      16.13         0.9
+                                  LUT4	      35.00         1.3
+                                PFUREG	         22         1.6
+---------------------------------------------------
+Report for cell lm32_cpu
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1304.18        70.6
+                                  LUT4	    1818.50        69.4
+                                PFUREG	       1081        77.0
+                                RIPPLE	        382        92.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         lm32_logic_op	          1         1.7
+                       lm32_multiplier	          1        13.2
+                          lm32_shifter	          1         6.0
+                    lm32_mc_arithmetic	          1         8.9
+         lm32_debug(watchpoints=32'b0)	          1         0.0
+                 lm32_instruction_unit	          1         6.2
+                             lm32_jtag	          1         1.1
+                  lm32_load_store_unit	          1         5.2
+                        lm32_interrupt	          1         0.7
+                          lm32_decoder	          1         3.3
+                            lm32_adder	          1         1.0
+---------------------------------------------------
+Report for cell lm32_shifter
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/shifter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     110.75         6.0
+                                  LUT4	     222.67         8.5
+                                PFUREG	         33         2.4
+---------------------------------------------------
+Report for cell lm32_multiplier
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     244.58        13.2
+                                  LUT4	      21.00         0.8
+                                PFUREG	         96         6.8
+                                RIPPLE	        287        69.7
+---------------------------------------------------
+Report for cell lm32_mc_arithmetic
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     165.17         8.9
+                                  LUT4	     350.00        13.4
+                                PFUREG	        138         9.8
+                                RIPPLE	         21         5.1
+---------------------------------------------------
+Report for cell lm32_logic_op
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/logic_op
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.00         1.7
+                                  LUT4	      64.00         2.4
+---------------------------------------------------
+Report for cell lm32_load_store_unit
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      95.50         5.2
+                                  LUT4	     117.33         4.5
+                                PFUREG	        180        12.8
+---------------------------------------------------
+Report for cell lm32_jtag
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.75         1.1
+                                  LUT4	      34.00         1.3
+                                PFUREG	         32         2.3
+---------------------------------------------------
+Report for cell lm32_interrupt
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.83         0.7
+                                  LUT4	      11.00         0.4
+                                PFUREG	         35         2.5
+---------------------------------------------------
+Report for cell lm32_instruction_unit
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     114.92         6.2
+                                  LUT4	      62.50         2.4
+                                PFUREG	        218        15.5
+                                RIPPLE	         32         7.8
+---------------------------------------------------
+Report for cell lm32_debug(watchpoints=32'b0)
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/hw_debug
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell lm32_decoder
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      61.00         3.3
+                                  LUT4	     184.00         7.0
+---------------------------------------------------
+Report for cell lm32_adder
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.75         1.0
+                                  LUT4	       1.00         0.0
+                                RIPPLE	         18         4.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           lm32_addsub	          1         1.0
+---------------------------------------------------
+Report for cell lm32_addsub
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.75         1.0
+                                  LUT4	       1.00         0.0
+                                RIPPLE	         18         4.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+               pmi_addsubMo32324b7f59e	          1         1.0
+---------------------------------------------------
+Report for cell pmi_addsubMo32324b7f59e
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off3232
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.75         1.0
+                                  LUT4	       1.00         0.0
+                                RIPPLE	         18         4.4
+---------------------------------------------------
+Report for cell lm32_monitor
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      34.50         1.9
+                                  LUT4	      56.00         2.1
+                                PFUREG	         68         4.8
+                                   EBR	          4        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                      lm32_monitor_ram	          1         0.0
+---------------------------------------------------
+Report for cell lm32_monitor_ram
+   Instance path: vga_leds/mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          4        100.0
+---------------------------------------------------
+Report for cell xo2chub
+   Instance path: vga_leds/xo2chub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.77         1.4
+                                  LUT4	      12.00         0.5
+                                PFUREG	         51         3.6
+                                RIPPLE	         17         4.1

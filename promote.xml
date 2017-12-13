@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml" version="Diamond (64-bit) 3.10.1.112" date="Thu Nov 30 06:27:11 2017" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35921504" type="Info" />
+  <msg mid="35931002" type="Warning" />
+  <msg mid="35901010" type="Error" />
+  <msg mid="35901209" type="Warning" />
+  <msg mid="35901328" type="Info" />
+  <msg mid="35901199" type="Warning" />
+  <msg mid="35901142" type="Warning" />
+  <msg mid="35901875" type="Warning" />
+</userSetting>

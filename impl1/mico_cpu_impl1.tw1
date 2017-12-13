@@ -1,0 +1,510 @@
+
+Loading design for application trce from file mico_cpu_impl1_map.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:38:50 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o mico_cpu_impl1.tw1 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml mico_cpu_impl1_map.ncd mico_cpu_impl1.prf 
+Design file:     mico_cpu_impl1_map.ncd
+Preference file: mico_cpu_impl1.prf
+Device,speed:    LCMXO2-7000HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "w_clk_cpu" 100.000000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 10.781ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_m_670  (from w_clk_cpu +)
+   Destination:    FF         Data in        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i12  (to w_clk_cpu +)
+
+   Delay:              20.631ns  (33.1% logic, 66.9% route), 15 logic levels.
+
+ Constraint Details:
+
+     20.631ns physical path delay mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_233 to mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/SLICE_922 exceeds
+     10.000ns delay constraint less
+      0.150ns DIN_SET requirement (totaling 9.850ns) by 10.781ns
+
+ Physical Path Details:
+
+      Data path mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_233 to mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/SLICE_922:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *SLICE_233.CLK to */SLICE_233.Q0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_233 (from w_clk_cpu)
+ROUTE         4   e 1.030 */SLICE_233.Q0 to *SLICE_1756.A1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_m
+CTOF_DEL    ---     0.452 *SLICE_1756.A1 to *SLICE_1756.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1756
+ROUTE         5   e 1.030 *SLICE_1756.F1 to *SLICE_1621.D0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n52
+CTOF_DEL    ---     0.452 *SLICE_1621.D0 to *SLICE_1621.F0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1621
+ROUTE        32   e 1.030 *SLICE_1621.F0 to *SLICE_1746.A0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41428
+CTOF_DEL    ---     0.452 *SLICE_1746.A0 to *SLICE_1746.F0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1746
+ROUTE         5   e 1.030 *SLICE_1746.F0 to *SLICE_1205.D1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41408
+CTOF_DEL    ---     0.452 *SLICE_1205.D1 to *SLICE_1205.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1205
+ROUTE         1   e 1.030 *SLICE_1205.F1 to *SLICE_1792.D1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n8
+CTOF_DEL    ---     0.452 *SLICE_1792.D1 to *SLICE_1792.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1792
+ROUTE        69   e 1.030 *SLICE_1792.F1 to *SLICE_1862.B1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/raw_x_1
+CTOF_DEL    ---     0.452 *SLICE_1862.B1 to *SLICE_1862.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1862
+ROUTE         1   e 1.030 *SLICE_1862.F1 to *SLICE_1749.D0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interlock_N_1327
+CTOF_DEL    ---     0.452 *SLICE_1749.D0 to *SLICE_1749.F0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1749
+ROUTE         1   e 1.030 *SLICE_1749.F0 to *SLICE_1741.C0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4
+CTOF_DEL    ---     0.452 *SLICE_1741.C0 to *SLICE_1741.F0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1741
+ROUTE         1   e 1.030 *SLICE_1741.F0 to *SLICE_1797.B1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n37259
+CTOF_DEL    ---     0.452 *SLICE_1797.B1 to *SLICE_1797.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1797
+ROUTE        14   e 1.030 *SLICE_1797.F1 to *SLICE_1623.B1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n39970
+CTOF_DEL    ---     0.452 *SLICE_1623.B1 to *SLICE_1623.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1623
+ROUTE         4   e 1.030 *SLICE_1623.F1 to *SLICE_1934.C1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n42740
+CTOF_DEL    ---     0.452 *SLICE_1934.C1 to *SLICE_1934.F1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1934
+ROUTE         1   e 0.401 *SLICE_1934.F1 to *SLICE_1934.D0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41345
+CTOF_DEL    ---     0.452 *SLICE_1934.D0 to *SLICE_1934.F0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/SLICE_1934
+ROUTE        32   e 1.030 *SLICE_1934.F0 to *SLICE_1505.M0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n18873
+MTOOFX_DEL  ---     0.345 *SLICE_1505.M0 to *ICE_1505.OFX0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/mux_687_i13/SLICE_1505
+ROUTE         1   e 1.030 *ICE_1505.OFX0 to */SLICE_922.A1 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n1882
+CTOOFX_DEL  ---     0.661 */SLICE_922.A1 to *LICE_922.OFX0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/SLICE_922
+ROUTE         1   e 0.001 *LICE_922.OFX0 to *SLICE_922.DI0 mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n1996 (to w_clk_cpu)
+                  --------
+                   20.631   (33.1% logic, 66.9% route), 15 logic levels.
+
+Warning:  48.121MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "CLK50MHZ_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "w_clk_video" 75.000000 MHz ;
+            2379 items scored, 2 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.262ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              r_3__I_0/u_hvsync/pixel_count_19667_19668__i1  (from w_clk_video +)
+   Destination:    FF         Data in        r_3__I_0/color_fixed_i1  (to w_clk_video +)
+
+   Delay:              13.445ns  (35.7% logic, 64.3% route), 11 logic levels.
+
+ Constraint Details:
+
+     13.445ns physical path delay r_3__I_0/u_hvsync/SLICE_1322 to r_3__I_0/SLICE_1287 exceeds
+     13.333ns delay constraint less
+      0.150ns DIN_SET requirement (totaling 13.183ns) by 0.262ns
+
+ Physical Path Details:
+
+      Data path r_3__I_0/u_hvsync/SLICE_1322 to r_3__I_0/SLICE_1287:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *LICE_1322.CLK to *SLICE_1322.Q0 r_3__I_0/u_hvsync/SLICE_1322 (from w_clk_video)
+ROUTE         5   e 1.030 *SLICE_1322.Q0 to *SLICE_1656.A0 r_3__I_0/w_pixel_count_0
+CTOF_DEL    ---     0.452 *SLICE_1656.A0 to *SLICE_1656.F0 r_3__I_0/SLICE_1656
+ROUTE         3   e 1.030 *SLICE_1656.F0 to *SLICE_1668.D0 r_3__I_0/n41518
+CTOF_DEL    ---     0.452 *SLICE_1668.D0 to *SLICE_1668.F0 r_3__I_0/SLICE_1668
+ROUTE         7   e 1.030 *SLICE_1668.F0 to *SLICE_1961.A0 r_3__I_0/n41418
+CTOF_DEL    ---     0.452 *SLICE_1961.A0 to *SLICE_1961.F0 r_3__I_0/SLICE_1961
+ROUTE         1   e 1.030 *SLICE_1961.F0 to *SLICE_1590.C1 r_3__I_0/n16_adj_3983
+CTOF_DEL    ---     0.452 *SLICE_1590.C1 to *SLICE_1590.F1 r_3__I_0/SLICE_1590
+ROUTE         6   e 1.030 *SLICE_1590.F1 to *SLICE_1988.C0 r_3__I_0/vl_seg_line0
+CTOF_DEL    ---     0.452 *SLICE_1988.C0 to *SLICE_1988.F0 r_3__I_0/SLICE_1988
+ROUTE         2   e 1.030 *SLICE_1988.F0 to *SLICE_1397.M0 r_3__I_0/n39524
+MTOOFX_DEL  ---     0.345 *SLICE_1397.M0 to *ICE_1397.OFX0 r_3__I_0/mux_177_i2/SLICE_1397
+ROUTE         1   e 1.030 *ICE_1397.OFX0 to *SLICE_1391.D0 r_3__I_0/n1850
+CTOOFX_DEL  ---     0.661 *SLICE_1391.D0 to *ICE_1391.OFX0 r_3__I_0/mux_183_i2/SLICE_1391
+ROUTE         1   e 0.001 *ICE_1391.OFX0 to *LICE_1391.FXB r_3__I_0/n1874
+FXTOOFX_DE  ---     0.223 *LICE_1391.FXB to *ICE_1391.OFX1 r_3__I_0/mux_183_i2/SLICE_1391
+ROUTE         1   e 1.030 *ICE_1391.OFX1 to *SLICE_1287.A1 r_3__I_0/n2107
+CTOF_DEL    ---     0.452 *SLICE_1287.A1 to *SLICE_1287.F1 r_3__I_0/SLICE_1287
+ROUTE         1   e 0.401 *SLICE_1287.F1 to *SLICE_1287.A0 r_3__I_0/n2111
+CTOF_DEL    ---     0.452 *SLICE_1287.A0 to *SLICE_1287.F0 r_3__I_0/SLICE_1287
+ROUTE         1   e 0.001 *SLICE_1287.F0 to *LICE_1287.DI0 r_3__I_0/color_1 (to w_clk_video)
+                  --------
+                   13.445   (35.7% logic, 64.3% route), 11 logic levels.
+
+Warning:  73.556MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "w_clk_cpu" 100.000000    |             |             |
+MHz ;                                   |  100.000 MHz|   48.121 MHz|  15 *
+                                        |             |             |
+FREQUENCY NET "CLK50MHZ_c" 50.000000    |             |             |
+MHz ;                                   |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "w_clk_video" 75.000000   |             |             |
+MHz ;                                   |   75.000 MHz|   73.556 MHz|  11 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+2 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n3|        |        |
+9970                                    |      14|    4096|     99.95%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n3|        |        |
+7259                                    |       1|    4096|     99.95%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4|       1|    3897|     95.10%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/in|        |        |
+terlock_N_1327                          |       1|    3722|     90.82%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4|        |        |
+1408                                    |       5|    3663|     89.39%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n8|       1|    3163|     77.18%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/ra|        |        |
+w_x_1                                   |      69|    3163|     77.18%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/br|        |        |
+anch_flushX_m_N_1116                    |      15|    1865|     45.51%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4|        |        |
+1428                                    |      32|    1798|     43.88%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4|        |        |
+2740                                    |       4|    1611|     39.31%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n5|        |        |
+2                                       |       5|    1350|     32.94%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_|        |        |
+clk_cpu_enable_958                      |     116|    1297|     31.65%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4|        |        |
+1345                                    |       1|    1275|     31.11%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc|        |        |
+_arithmetic/n18873                      |      32|    1275|     31.11%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n3|        |        |
+8972                                    |       2|     900|     21.96%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n4|        |        |
+1507                                    |       1|     649|     15.84%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/va|        |        |
+lid_m                                   |       6|     457|     11.15%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/st|        |        |
+ore_m                                   |       5|     450|     10.98%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/br|        |        |
+anch_predict_taken_m                    |       3|     450|     10.98%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/lo|        |        |
+ad_m                                    |       4|     450|     10.98%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/br|        |        |
+anch_m                                  |       1|     450|     10.98%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/lo|        |        |
+ad_x                                    |       6|     450|     10.98%
+                                        |        |        |
+mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n1|        |        |
+8875                                    |      32|     426|     10.40%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 6 clocks:
+
+Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 40
+   No transfer within this clock domain is found
+
+Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0   Loads: 9
+   No transfer within this clock domain is found
+
+Clock Domain: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update   Source: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/SLICE_1228.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CLK50MHZ_c   Source: CLK50MHZ.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: w_clk_cpu   Source: main_pll_inst/PLLInst_0.CLKOS   Loads: 850
+   Covered under: FREQUENCY NET "w_clk_cpu" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
+      Not reported because source and destination domains are unrelated.
+
+   Clock Domain: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update   Source: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/SLICE_1228.F1
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: w_clk_video   Source: main_pll_inst/PLLInst_0.CLKOP   Loads: 36
+   Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 1
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 4
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 1
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 1
+
+   Clock Domain: w_clk_cpu   Source: main_pll_inst/PLLInst_0.CLKOS
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 16
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4098  Score: 29894007
+Cumulative negative slack: 29894007
+
+Constraints cover 20841497 paths, 3 nets, and 15330 connections (94.07% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.1.112
+Thu Nov 30 05:38:51 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o mico_cpu_impl1.tw1 -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/promote.xml mico_cpu_impl1_map.ncd mico_cpu_impl1.prf 
+Design file:     mico_cpu_impl1_map.ncd
+Preference file: mico_cpu_impl1.prf
+Device,speed:    LCMXO2-7000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "w_clk_cpu" 100.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.441ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_i0  (from w_clk_cpu +)
+   Destination:    FF         Data in        mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_i0  (to w_clk_cpu +)
+
+   Delay:               0.428ns  (53.3% logic, 46.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.428ns physical path delay mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/SLICE_1265 to mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/SLICE_1265 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.441ns
+
+ Physical Path Details:
+
+      Data path mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/SLICE_1265 to mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/SLICE_1265:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *LICE_1265.CLK to *SLICE_1265.Q0 mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/SLICE_1265 (from w_clk_cpu)
+ROUTE        16   e 0.199 *SLICE_1265.Q0 to *SLICE_1265.M0 mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_0
+MTOOFX_DEL  ---     0.095 *SLICE_1265.M0 to *ICE_1265.OFX0 mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/SLICE_1265
+ROUTE         1   e 0.001 *ICE_1265.OFX0 to *LICE_1265.DI0 mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/n1 (to w_clk_cpu)
+                  --------
+                    0.428   (53.3% logic, 46.7% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "CLK50MHZ_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "w_clk_video" 75.000000 MHz ;
+            2379 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.667ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mico_cpu_inst/gpioGPIO_DAT_O_31__I_0/PIO_DATA_0__470  (from w_clk_cpu +)
+   Destination:    FF         Data in        r_3__I_0/green_leds_fixed_i0_i0  (to w_clk_video +)
+
+   Delay:               0.648ns  (20.5% logic, 79.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.648ns physical path delay mico_cpu_inst/SLICE_520 to r_3__I_0/SLICE_1600 meets
+      (delay constraint based on source clock period of 10.000ns and destination clock period of 13.333ns)
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.667ns
+
+ Physical Path Details:
+
+      Data path mico_cpu_inst/SLICE_520 to r_3__I_0/SLICE_1600:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_520.CLK to */SLICE_520.Q0 mico_cpu_inst/SLICE_520 (from w_clk_cpu)
+ROUTE         1   e 0.515 */SLICE_520.Q0 to *SLICE_1600.M0 counter_0 (to w_clk_video)
+                  --------
+                    0.648   (20.5% logic, 79.5% route), 1 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "w_clk_cpu" 100.000000    |             |             |
+MHz ;                                   |     0.000 ns|     0.441 ns|   2  
+                                        |             |             |
+FREQUENCY NET "CLK50MHZ_c" 50.000000    |             |             |
+MHz ;                                   |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "w_clk_video" 75.000000   |             |             |
+MHz ;                                   |     0.000 ns|     0.667 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 6 clocks:
+
+Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 40
+   No transfer within this clock domain is found
+
+Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0   Loads: 9
+   No transfer within this clock domain is found
+
+Clock Domain: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update   Source: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/SLICE_1228.F1   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CLK50MHZ_c   Source: CLK50MHZ.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: w_clk_cpu   Source: main_pll_inst/PLLInst_0.CLKOS   Loads: 850
+   Covered under: FREQUENCY NET "w_clk_cpu" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
+      Not reported because source and destination domains are unrelated.
+
+   Clock Domain: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update   Source: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/SLICE_1228.F1
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: w_clk_video   Source: main_pll_inst/PLLInst_0.CLKOP   Loads: 36
+   Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 1
+
+   Clock Domain: r_3__I_0/w_hsync   Source: r_3__I_0/u_hvsync/SLICE_1317.Q0
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 2
+
+   Clock Domain: w_clk_cpu   Source: main_pll_inst/PLLInst_0.CLKOS
+      Covered under: FREQUENCY NET "w_clk_video" 75.000000 MHz ;   Transfers: 16
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 20841497 paths, 3 nets, and 16012 connections (98.26% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4098 (setup), 0 (hold)
+Score: 29894007 (setup), 0 (hold)
+Cumulative negative slack: 29894007 (29894007+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

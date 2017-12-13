@@ -1,0 +1,155 @@
+<HTML>
+<HEAD><TITLE>I/O Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
+Loading design for application iotiming from file mico_cpu_impl1.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file mico_cpu_impl1.ncd.
+Design name: vga_leds
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: vga_leds
+// Package: TQFP144
+// ncd File: mico_cpu_impl1.ncd
+// Version: Diamond (64-bit) 3.10.1.112
+// Written on Wed Nov 29 02:40:21 2017
+// M: Minimum Performance Grade
+// iotiming mico_cpu_impl1.ncd mico_cpu_impl1.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5):
+
+// Input Setup and Hold Times
+
+Port         Clock    Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+sram_data[0] CLK50MHZ R    10.558      5      -0.667     M
+sram_data[1] CLK50MHZ R    11.196      5      -0.663     M
+sram_data[2] CLK50MHZ R     9.122      5      -0.608     M
+sram_data[3] CLK50MHZ R    11.948      5      -0.759     M
+sram_data[4] CLK50MHZ R    11.381      5      -0.962     M
+sram_data[5] CLK50MHZ R    11.171      5      -0.944     M
+sram_data[6] CLK50MHZ R    11.211      5      -1.043     M
+sram_data[7] CLK50MHZ R    11.788      5      -1.204     M
+
+
+// Clock to Output Delay
+
+Port         Clock    Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+b[0]         CLK50MHZ R    12.983         5        3.899          M
+b[1]         CLK50MHZ R    12.640         5        3.788          M
+g[0]         CLK50MHZ R    12.876         5        3.845          M
+g[1]         CLK50MHZ R    13.394         5        4.015          M
+g[2]         CLK50MHZ R    13.233         5        4.064          M
+g[3]         CLK50MHZ R    13.233         5        4.064          M
+hsync        CLK50MHZ R     9.025         5        2.852          M
+r[0]         CLK50MHZ R    13.495         5        4.066          M
+r[1]         CLK50MHZ R    13.145         5        3.955          M
+r[2]         CLK50MHZ R    13.531         5        4.107          M
+r[3]         CLK50MHZ R    13.531         5        4.107          M
+sram_adr[0]  CLK50MHZ R     8.060         5        2.547          M
+sram_adr[10] CLK50MHZ R     8.562         5        2.715          M
+sram_adr[11] CLK50MHZ R     7.898         5        2.535          M
+sram_adr[12] CLK50MHZ R     8.665         5        2.702          M
+sram_adr[13] CLK50MHZ R     7.980         5        2.531          M
+sram_adr[14] CLK50MHZ R     9.088         5        2.832          M
+sram_adr[15] CLK50MHZ R     9.151         5        2.867          M
+sram_adr[16] CLK50MHZ R     8.689         5        2.752          M
+sram_adr[17] CLK50MHZ R     9.108         5        2.836          M
+sram_adr[18] CLK50MHZ R     8.377         5        2.653          M
+sram_adr[1]  CLK50MHZ R     7.838         5        2.468          M
+sram_adr[2]  CLK50MHZ R     7.681         5        2.441          M
+sram_adr[3]  CLK50MHZ R     7.414         5        2.361          M
+sram_adr[4]  CLK50MHZ R     8.327         5        2.652          M
+sram_adr[5]  CLK50MHZ R     7.442         5        2.391          M
+sram_adr[6]  CLK50MHZ R     8.741         5        2.788          M
+sram_adr[7]  CLK50MHZ R     8.523         5        2.730          M
+sram_adr[8]  CLK50MHZ R     8.838         5        2.798          M
+sram_adr[9]  CLK50MHZ R     8.592         5        2.703          M
+sram_csn     CLK50MHZ R    11.044         5        3.248          M
+sram_data[0] CLK50MHZ R    17.922         5        2.648          M
+sram_data[1] CLK50MHZ R    17.922         5        2.721          M
+sram_data[2] CLK50MHZ R    18.312         5        2.738          M
+sram_data[3] CLK50MHZ R    18.312         5        2.622          M
+sram_data[4] CLK50MHZ R    19.731         5        2.871          M
+sram_data[5] CLK50MHZ R    19.738         5        2.976          M
+sram_data[6] CLK50MHZ R    19.738         5        2.905          M
+sram_data[7] CLK50MHZ R    19.731         5        2.912          M
+sram_oen     CLK50MHZ R    13.301         5        3.865          M
+sram_wen     CLK50MHZ R    17.454         5        3.448          M
+vsync        CLK50MHZ R    11.125         5        3.513          M
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

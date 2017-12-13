@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROJECT path="..">
+<SYSLIB>
+<MSB_FILE path="./../../mico_cpu/soc" name="mico_cpu.msb" />
+<LATTICE_MDK_PERIPHERALS rootdir="../../../mico_cpu/soc/../components"/>
+<BUILD_CFG name="Debug"/>
+<USER_PREFS name="user.pref" path=".."/>
+<BUILD>
+<COMPILER flags=" -ffunction-sections -O0 -g2 -Wall -D_USE_LSCC_PRINTF_"/>
+</BUILD>
+</SYSLIB>
+</PROJECT>

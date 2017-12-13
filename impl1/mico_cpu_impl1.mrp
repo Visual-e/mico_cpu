@@ -1,0 +1,1986 @@
+
+           Lattice Mapping Report File for Design Module 'vga_leds'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 5 -oc Commercial
+     mico_cpu_impl1.ngd -o mico_cpu_impl1_map.ncd -pr mico_cpu_impl1.prf -mp
+     mico_cpu_impl1.mrp -lpf E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lc
+     mx_prj/projects/mico_cpu/impl1/mico_cpu_impl1.lpf -lpf E:/projects/prj_fpga
+     _lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu.lpf -c 0
+     -gui -msgset E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/proj
+     ects/mico_cpu/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HCTQFP144
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.1.112
+Mapped on:  11/30/17  05:38:45
+
+Design Summary
+--------------
+
+   Number of registers:   1404 out of  7209 (19%)
+      PFU registers:         1404 out of  6864 (20%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:      1848 out of  3432 (54%)
+      SLICEs as Logic/ROM:   1740 out of  3432 (51%)
+      SLICEs as RAM:          108 out of  2574 (4%)
+      SLICEs as Carry:        412 out of  3432 (12%)
+   Number of LUT4s:        3661 out of  6864 (53%)
+      Number used as logic LUTs:        2621
+      Number used as distributed RAM:   216
+      Number used as ripple logic:      824
+      Number used as shift registers:     0
+   Number of PIO sites used: 45 + 4(JTAG) out of 115 (43%)
+   Number of block RAMs:  4 out of 26 (15%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      Yes
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  6
+     Net w_clk_cpu: 850 loads, 850 rising, 0 falling (Driver:
+
+                                    Page 1
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Design Summary (cont)
+---------------------
+     main_pll_inst/PLLInst_0 )
+     Net CLK50MHZ_c: 1 loads, 1 rising, 0 falling (Driver: PIO CLK50MHZ )
+     Net w_clk_video: 36 loads, 36 rising, 0 falling (Driver:
+     main_pll_inst/PLLInst_0 )
+     Net r_3__I_0/w_hsync: 8 loads, 8 rising, 0 falling (Driver:
+     r_3__I_0/u_hvsync/hsync_25 )
+     Net jtaghub16_jtck: 40 loads, 0 rising, 40 falling (Driver:
+     xo2chub/genblk7.jtagf_u )
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update: 1 loads, 0 rising, 1
+     falling (Driver: mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\i10/i1 )
+   Number of Clock Enables:  80
+     Net w_clk_cpu_enable_20: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_23: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_25: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_107: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_116: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_137: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_183: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_188: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_265: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_279: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_314: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_323: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_354: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_460: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_537: 1 loads, 1 LSLICEs
+     Net w_clk_cpu_enable_576: 1 loads, 1 LSLICEs
+     Net counter_2_adj_3985: 1 loads, 1 LSLICEs
+     Net r_3__I_0/red_leds_fixed_15__N_3476: 8 loads, 8 LSLICEs
+     Net mico_cpu_inst/w_clk_cpu_enable_696: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/data_bus_error_exception_N_1225: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_349: 1
+     loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_1: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_648: 4
+     loads, 4 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_339:
+     10 loads, 10 LSLICEs
+     Net mico_cpu_inst/w_clk_cpu_enable_900: 8 loads, 8 LSLICEs
+     Net
+     mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/tmp_dat_o_nxt_31__N_3127: 1
+     loads, 1 LSLICEs
+     Net mico_cpu_inst/PIO_OUT_7__N_3327: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_363: 1
+     loads, 1 LSLICEs
+     Net mico_cpu_inst/w_clk_cpu_enable_303: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_527: 4
+     loads, 4 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_566: 3
+     loads, 3 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_577: 2
+     loads, 2 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_619: 4
+     loads, 4 LSLICEs
+     Net mico_cpu_inst/PIO_OUT_15__N_3318: 4 loads, 4 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Design Summary (cont)
+---------------------
+     Net mico_cpu_inst/arbiter/w_clk_cpu_enable_547: 1 loads, 1 LSLICEs
+     Net jtaghub16_jupdate: 8 loads, 8 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_985: 27 loads,
+     27 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_984: 163 loads,
+     163 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_972: 30 loads,
+     30 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/cycles_5__N_2495: 16 loads, 16
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_711: 34 loads,
+     34 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_878: 33 loads,
+     33 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/valid_f_N_1227: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/eba_31__N_1101: 12 loads, 12
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/deba_31__N_1120: 12 loads, 12
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/memop_pc_w_31__N_1219: 15 loads,
+     15 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_697: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_245: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_886: 19 loads,
+     19 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_638: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958: 32 loads,
+     32 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/dc_re_N_2934: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_623: 16 loads,
+     16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_865: 36 loads,
+     36 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_216: 1 loads, 1
+     LSLICEs
+     Net
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_27:
+     1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_
+     438: 16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/w_clk_cpu_enable_
+     979: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enabl
+     e_872: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_914: 26 loads,
+     26 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_763: 15 loads,
+     15 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enabl
+     e_769: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enabl
+     e_270: 1 loads, 1 LSLICEs
+
+                                    Page 3
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Design Summary (cont)
+---------------------
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enabl
+     e_271: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jrx_csr_read_da
+     ta_8__N_2865: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/w_clk_cpu_enabl
+     e_275: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_330: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_983: 22 loads,
+     22 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_709:
+     16 loads, 16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_255: 1
+     loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_273: 1
+     loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/w_clk_cpu_enable_982: 1
+     loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable
+     _558: 32 loads, 32 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/w_clk_cpu_enable
+     _587: 1 loads, 1 LSLICEs
+     Net
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_679:
+     16 loads, 16 LSLICEs
+     Net
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_980:
+     16 loads, 16 LSLICEs
+     Net
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_175:
+     1 loads, 1 LSLICEs
+     Net
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_178:
+     1 loads, 1 LSLICEs
+     Net xo2chub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net xo2chub/er1_shift_reg8: 10 loads, 10 LSLICEs
+   Number of LSRs:  27
+     Net n41488: 1 loads, 1 LSLICEs
+     Net w_locked: 17 loads, 17 LSLICEs
+     Net counter_2_adj_3985: 8 loads, 0 LSLICEs
+     Net r_3__I_0/n41378: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_0: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/n633: 2 loads, 2
+     LSLICEs
+     Net mico_cpu_inst/n26128: 8 loads, 8 LSLICEs
+     Net jtaghub16_jrstn: 39 loads, 39 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/exception_m: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n22503: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/branch_taken_m: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41428: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n22501: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_972: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n31636: 2 loads, 2 LSLICEs
+
+                                    Page 4
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Design Summary (cont)
+---------------------
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n26142: 3 loads, 3 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n24298: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__N_505: 1 loads, 1
+     LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n22524: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958: 19 loads,
+     19 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n26126: 1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n26122: 4 loads, 4 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/n22517: 33 loads,
+     33 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/n24867: 1
+     loads, 1 LSLICEs
+     Net
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/w_clk_cpu_enable_679:
+     1 loads, 1 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/n22505: 16 loads,
+     16 LSLICEs
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/n35807: 1 loads, 1
+     LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_984: 173 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/n41417: 117 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_clk_cpu_enable_958: 116 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/condition_x_0: 89 loads
+     Net read_idx_0_d_0: 81 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/size_x_1: 80 loads
+     Net read_idx_1_d_0: 80 loads
+     Net read_idx_1_d_1: 78 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_d_31: 77 loads
+     Net mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_1_x_1: 77 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| sram_data[1]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_data[0]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 5
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+IO (PIO) Attributes (cont)
+--------------------------
+| sram_data[2]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_data[3]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_data[4]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_data[5]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_data[6]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_data[7]        | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[16]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[17]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[18]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CLK50MHZ            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[0]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_csn            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[1]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_oen            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[2]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_wen            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[3]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[0]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| g[0]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[1]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| g[1]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| g[2]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[3]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| g[3]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[4]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| r[0]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[5]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 6
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+IO (PIO) Attributes (cont)
+--------------------------
+| r[1]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[6]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| r[2]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| r[3]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[7]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[8]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[9]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[10]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[11]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[12]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| vsync               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| hsync               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[13]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[14]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sram_adr[15]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block xo2chub/VCC_0 undriven or does not drive anything - clipped.
+Block xo2chub/GSR_INST undriven or does not drive anything - clipped.
+Block xo2chub/ip_enable[15] undriven or does not drive anything - clipped.
+Block xo2chub/cdn undriven or does not drive anything - clipped.
+Block n228810/RAM1 undriven or does not drive anything - clipped.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off323
+     2/scuba_vhi_inst undriven or does not drive anything - clipped.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off323
+     2/addsubd undriven or does not drive anything - clipped.
+Block n230080/RAM1 undriven or does not drive anything - clipped.
+Block n230110/RAM1 undriven or does not drive anything - clipped.
+Block n228780/RAM1 undriven or does not drive anything - clipped.
+Signal xo2chub/jrstn_i was merged into signal jtaghub16_jrstn
+Signal xo2chub/cdn.CN was merged into signal jtaghub16_jtck
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update_N_2932 was merged into
+     signal mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/add_sub_inv was merged into signal
+     mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder_op_x_n
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_stall_request_x was merged into
+     signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/cycles_5__N_2495
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/jtag_lm32_inst/JSHIFT_N_3042
+
+                                    Page 7
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+     was merged into signal jtaghub16_jshift
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/jtag_lm32_inst/DATA_BIT0/RES
+     ET_N_N_3048 was merged into signal jtaghub16_jrstn
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/jtag_lm32_inst/DATA_BIT0/CLK
+     _N_3046 was merged into signal jtaghub16_jtck
+Signal mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/w_clk_cpu_enable_184 was
+     merged into signal mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_1
+Signal mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/n5 was merged into signal
+     mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_0
+Signal mico_cpu_inst/counter_2__N_178 was merged into signal counter_2_adj_3985
+Signal r_3__I_0/led_idx_1 was merged into signal r_3__I_0/w_pixel_count_6
+Signal reset_n_N_45 was merged into signal w_locked
+Signal xo2chub/GND undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/scuba_vlo undriven or does not drive anything - clipped.
+Signal xo2chub/VCC undriven or does not drive anything - clipped.
+Signal xo2chub/bit_count_cry_0_COUT[3] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/rom_rd_addr_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/N_2 undriven or does not drive anything - clipped.
+Signal xo2chub/rom_rd_addr_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/rom_rd_addr_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_16_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_16_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/N_3 undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[14] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[15] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_15_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_15_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[12] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[13] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_13_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_13_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[10] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[11] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_11_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_11_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[8] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[9] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_9_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_9_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[6] undriven or does not drive anything - clipped.
+
+                                    Page 8
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+Signal xo2chub/er2_tdo[7] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_7_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_7_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[4] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[5] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_5_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_5_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[2] undriven or does not drive anything - clipped.
+Signal xo2chub/er2_tdo[3] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_3_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_3_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/er2_tdo[1] undriven or does not drive anything - clipped.
+Signal xo2chub/jtdo2_int_prm_1_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/jtdo2_int_prm_1_0_0_COUT undriven or does not drive anything -
+     clipped.
+Signal xo2chub/ip_enable[15] undriven or does not drive anything - clipped.
+Signal xo2chub/genblk7.un1_jtagf_u_1 undriven or does not drive anything -
+     clipped.
+Signal xo2chub/genblk7.un1_jtagf_u undriven or does not drive anything -
+     clipped.
+Signal xo2chub/tdoa undriven or does not drive anything - clipped.
+Signal xo2chub/tdia undriven or does not drive anything - clipped.
+Signal xo2chub/tmsa undriven or does not drive anything - clipped.
+Signal xo2chub/tcka undriven or does not drive anything - clipped.
+Signal xo2chub/cdn undriven or does not drive anything - clipped.
+Signal xo2chub/bit_count_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal xo2chub/N_1 undriven or does not drive anything - clipped.
+Signal n228810/DO2 undriven or does not drive anything - clipped.
+Signal n228810/DO3 undriven or does not drive anything - clipped.
+Signal n228810/DO1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/scuba_vhi undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/addsub_0/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/precin_inst102/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/precin_inst102/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/addsubd/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/co16d undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/addsubd/COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off32
+     32/co16 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_3_1/
+     S1 undriven or does not drive anything - clipped.
+
+                                    Page 9
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_3_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_3_1/
+     CI undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_2_31
+     /S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_2_31
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_3_31
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_2_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/add_18875_rep_2_1/
+     CI undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p_30__I_0_add_2_33/CO
+     undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669_add_4_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669_add_4_1/
+     CI undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669_add_4_7/
+     S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669_add_4_7/
+     CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p_30__I_0_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p_30__I_0_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_6_4/C
+     OUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_5_6/C
+     OUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_7_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_7_2/C
+     OUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_8_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_8_15/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_2/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_2/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_4/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_4/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_6/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_6/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_8/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_8/S0 undriven or does not drive anything - clipped.
+
+                                   Page 10
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_9_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_10/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_10/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_12/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_12/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_14/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_14/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_16/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_16/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_18/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_18/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_20/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_20/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_22/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_22/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_24/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_24/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_26/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_26/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_28/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_28/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_30/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_30/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_0_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_0_16/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_1_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_9_11/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_1_14/
+     COUT undriven or does not drive anything - clipped.
+
+                                   Page 11
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_10_1
+     /S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_2_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_10_7/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_11_1
+     /S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_2_12/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_11_3/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_3_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_3_10/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_t_mult_32u_32u_0_14
+     _1/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/t_mult_32u_32u_0_add_14_
+     9/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/t_mult_32u_32u_0_add_14_
+     9/COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_12_1
+     /S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_4_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_5_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_12_13
+     /COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_0_15
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_4_8/C
+     OUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_2_14
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_4_13
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_6_12
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_8_11
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_6_1/
+     S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_10_1
+     0/CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_12_9
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_14_8
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_16_7
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/Cadd_mult_32u_32u_0_13_1
+     /S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_18_6
+     /CO undriven or does not drive anything - clipped.
+
+                                   Page 12
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_20_5
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_22_4
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_24_3
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_26_2
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_add_13_5/
+     COUT undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_28_1
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_mult_30_0
+     /CO undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_0/S1 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/mult_32u_32u_0_cin_lr_ad
+     d_0/S0 undriven or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_0/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_0/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_0/CI undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_25/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_25/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_19/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_19/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_27/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_27/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_29/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_29/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/pc_d_31__I_0_2/S0 undriven or does
+     not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/pc_d_31__I_0_2/CI undriven or does
+     not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_21/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_21/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_31/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_31/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_23/S1 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_23/S0 undriven
+     or does not drive anything - clipped.
+
+                                   Page 13
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Removed logic (cont)
+--------------------
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_32/S0 undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_0_x_31__I_0_32/CO undriven
+     or does not drive anything - clipped.
+Signal mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/pc_d_31__I_0_30/CO undriven or does
+     not drive anything - clipped.
+Signal n230080/DO2 undriven or does not drive anything - clipped.
+Signal n230080/DO3 undriven or does not drive anything - clipped.
+Signal n230080/DO1 undriven or does not drive anything - clipped.
+Signal r_3__I_0/u_hvsync/pixel_count_19667_19668_add_4_1/S0 undriven or does not
+     drive anything - clipped.
+Signal r_3__I_0/u_hvsync/pixel_count_19667_19668_add_4_1/CI undriven or does not
+     drive anything - clipped.
+Signal r_3__I_0/u_hvsync/pixel_count_19667_19668_add_4_11/CO undriven or does
+     not drive anything - clipped.
+Signal r_3__I_0/u_hvsync/add_15_1/S0 undriven or does not drive anything -
+     clipped.
+Signal r_3__I_0/u_hvsync/add_15_1/CI undriven or does not drive anything -
+     clipped.
+Signal r_3__I_0/u_hvsync/add_15_13/S1 undriven or does not drive anything -
+     clipped.
+Signal r_3__I_0/u_hvsync/add_15_13/CO undriven or does not drive anything -
+     clipped.
+Signal n230110/DO2 undriven or does not drive anything - clipped.
+Signal n230110/DO3 undriven or does not drive anything - clipped.
+Signal n230110/DO1 undriven or does not drive anything - clipped.
+Signal n228780/DO2 undriven or does not drive anything - clipped.
+Signal n228780/DO3 undriven or does not drive anything - clipped.
+Signal n228780/DO1 undriven or does not drive anything - clipped.
+Block xo2chub/genblk7.jtagf_u_RNIO314 was optimized away.
+Block xo2chub/ip_enable_0_.CN was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/i39325 was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off323
+     2/INV_0 was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/i2_1_lut was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/JSHIFT_I_0
+     was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_BIT0/RES
+     ET_N_I_0 was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_BIT0/CLK
+     _I_0 was optimized away.
+Block mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/i20784_1_lut was optimized
+     away.
+Block mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/i20886_1_lut was optimized
+     away.
+Block mico_cpu_inst/counter_2__I_0_1_lut was optimized away.
+Block r_3__I_0/i3_1_lut was optimized away.
+Block reset_n_I_0_1_lut was optimized away.
+Block xo2chub/GND_0 was optimized away.
+Block i6 was optimized away.
+Block mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/adder/addsub/pmi_addsubMachXO2off323
+     2/scuba_vlo_inst was optimized away.
+
+
+
+
+
+                                   Page 14
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Memory Usage
+------------
+
+    
+         
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO. 
+    /mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram:
+    EBRs: 4
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR genblk1.lm32_monitor_ram_0_3_0:  TYPE= DP8KC,  Width_A= 5,
+         Depth_A= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= lm32_monitor.mem,  MEM_LPC_FILE=
+         lm32_monitor_ram.lpc
+    -Contains EBR genblk1.lm32_monitor_ram_0_1_2:  TYPE= DP8KC,  Width_A= 9,
+         Depth_A= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= lm32_monitor.mem,  MEM_LPC_FILE=
+         lm32_monitor_ram.lpc
+    -Contains EBR genblk1.lm32_monitor_ram_0_0_3:  TYPE= DP8KC,  Width_A= 9,
+         Depth_A= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= lm32_monitor.mem,  MEM_LPC_FILE=
+         lm32_monitor_ram.lpc
+    -Contains EBR genblk1.lm32_monitor_ram_0_2_1:  TYPE= DP8KC,  Width_A= 9,
+         Depth_A= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= lm32_monitor.mem,  MEM_LPC_FILE=
+         lm32_monitor_ram.lpc
+/n228780:
+    EBRs: 0
+    RAM SLICEs: 2
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n228780/RAMW:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n228810:
+    EBRs: 0
+    RAM SLICEs: 2
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n228810/RAMW:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n230080:
+    EBRs: 0
+    RAM SLICEs: 2
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n230080/RAMW:
+
+                                   Page 15
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Memory Usage (cont)
+-------------------
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n230110:
+    EBRs: 0
+    RAM SLICEs: 2
+    Logic SLICEs: 0
+    PFU Registers: 0
+/n230110/RAMW:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers0:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers1:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers10:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers11:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers12:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers13:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers14:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers15:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers2:
+    EBRs: 0
+
+                                   Page 16
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Memory Usage (cont)
+-------------------
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers3:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers4:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers5:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers6:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers7:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers8:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers9:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d00:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d01:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d010:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d011:
+    EBRs: 0
+    RAM SLICEs: 3
+
+                                   Page 17
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Memory Usage (cont)
+-------------------
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d012:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d013:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d014:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d015:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d02:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d03:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d04:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d05:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d06:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d07:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/registers_d08:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+
+                                   Page 18
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+Memory Usage (cont)
+-------------------
+    PFU Registers: 0
+/registers_d09:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                main_pll_inst/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      CLK50MHZ_c
+  Output Clock(P):                         NODE     w_clk_video
+  Output Clock(S):                         NODE     w_clk_cpu
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     w_clk_video
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                         NODE     w_locked
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      50.0000
+  Output Clock(P) Frequency (MHz):                  75.0000
+  Output Clock(S) Frequency (MHz):                  100.0000
+
+                                   Page 19
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+PLL/DLL Summary (cont)
+----------------------
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     2
+  CLKFB Divider:                                    3
+  CLKOP Divider:                                    8
+  CLKOS Divider:                                    6
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 RISING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+ASIC Components
+---------------
+
+Instance Name: main_pll_inst/PLLInst_0
+         Type: EHXPLLJ
+Instance Name: mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.
+     lm32_monitor_ram_0_3_0
+         Type: DP8KC
+Instance Name: mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.
+     lm32_monitor_ram_0_1_2
+         Type: DP8KC
+Instance Name: mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.
+     lm32_monitor_ram_0_0_3
+         Type: DP8KC
+Instance Name: mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.
+     lm32_monitor_ram_0_2_1
+         Type: DP8KC
+Instance Name: xo2chub/genblk7.jtagf_u
+         Type: JTAGF
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+
+                                   Page 20
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+        of the design. The reset signal used for GSR control is
+        'counter_2_adj_3985'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'counter_2_adj_3985' via the GSR component.
+     
+
+     Type and number of components of the type: 
+   Register = 215 
+
+     Type and instance name of component: 
+   Register : r_3__I_0/seg7_0_i0
+   Register : r_3__I_0/r_vsync_212
+   Register : r_3__I_0/r_vsync__213
+   Register : r_3__I_0/seg7_1_i0
+   Register : r_3__I_0/seg7_2_i0
+   Register : r_3__I_0/seg7_3_i0
+   Register : r_3__I_0/color_fixed_i0
+   Register : r_3__I_0/r_hsync_211
+   Register : r_3__I_0/seg7_1_i6
+   Register : r_3__I_0/seg7_1_i5
+   Register : r_3__I_0/seg7_1_i4
+   Register : r_3__I_0/seg7_1_i3
+   Register : r_3__I_0/seg7_1_i2
+   Register : r_3__I_0/seg7_1_i1
+   Register : r_3__I_0/seg7_0_i6
+   Register : r_3__I_0/seg7_0_i5
+   Register : r_3__I_0/seg7_0_i4
+   Register : r_3__I_0/seg7_0_i3
+   Register : r_3__I_0/seg7_0_i2
+   Register : r_3__I_0/seg7_0_i1
+   Register : r_3__I_0/green_leds_fixed_i0_i15
+   Register : r_3__I_0/green_leds_fixed_i0_i14
+   Register : r_3__I_0/green_leds_fixed_i0_i13
+   Register : r_3__I_0/green_leds_fixed_i0_i12
+   Register : r_3__I_0/green_leds_fixed_i0_i11
+   Register : r_3__I_0/green_leds_fixed_i0_i10
+   Register : r_3__I_0/green_leds_fixed_i0_i9
+   Register : r_3__I_0/green_leds_fixed_i0_i8
+   Register : r_3__I_0/green_leds_fixed_i0_i7
+   Register : r_3__I_0/green_leds_fixed_i0_i6
+   Register : r_3__I_0/green_leds_fixed_i0_i5
+   Register : r_3__I_0/green_leds_fixed_i0_i4
+   Register : r_3__I_0/green_leds_fixed_i0_i3
+   Register : r_3__I_0/green_leds_fixed_i0_i2
+   Register : r_3__I_0/green_leds_fixed_i0_i1
+
+                                   Page 21
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+   Register : r_3__I_0/seg7_2_i1
+   Register : r_3__I_0/color_fixed_i2
+   Register : r_3__I_0/color_fixed_i1
+   Register : r_3__I_0/seg7_3_i6
+   Register : r_3__I_0/seg7_3_i5
+   Register : r_3__I_0/seg7_3_i4
+   Register : r_3__I_0/seg7_3_i3
+   Register : r_3__I_0/seg7_3_i2
+   Register : r_3__I_0/seg7_3_i1
+   Register : r_3__I_0/seg7_2_i6
+   Register : r_3__I_0/seg7_2_i5
+   Register : r_3__I_0/seg7_2_i4
+   Register : r_3__I_0/seg7_2_i3
+   Register : r_3__I_0/seg7_2_i2
+   Register : r_3__I_0/green_leds_fixed_i0_i0
+   Register : r_3__I_0/u_hvsync/vsync_27
+   Register : r_3__I_0/u_hvsync/hsync_25
+   Register : r_3__I_0/u_hvsync/line_count__i0
+   Register : r_3__I_0/u_hvsync/line_count__i11
+   Register : r_3__I_0/u_hvsync/line_count__i10
+   Register : r_3__I_0/u_hvsync/line_count__i9
+   Register : r_3__I_0/u_hvsync/line_count__i8
+   Register : r_3__I_0/u_hvsync/line_count__i7
+   Register : r_3__I_0/u_hvsync/line_count__i6
+   Register : r_3__I_0/u_hvsync/line_count__i5
+   Register : r_3__I_0/u_hvsync/line_count__i4
+   Register : r_3__I_0/u_hvsync/line_count__i3
+   Register : r_3__I_0/u_hvsync/line_count__i2
+   Register : r_3__I_0/u_hvsync/line_count__i1
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i1
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i11
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i10
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i9
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i8
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i7
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i6
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i5
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i4
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i3
+   Register : r_3__I_0/u_hvsync/pixel_count_19667_19668__i2
+   Register : mico_cpu_inst/counter_19665__i0
+   Register : mico_cpu_inst/counter_19665__i2
+   Register : mico_cpu_inst/counter_19665__i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT0/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT1/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT1/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT2/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT0/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT2/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+
+                                   Page 22
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+        BIT3/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT3/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT4/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT4/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT5/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT5/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT6/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT6/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT7/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/DATA_
+        BIT7/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/ADDR_
+        BIT0/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/ADDR_
+        BIT0/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/ADDR_
+        BIT1/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/ADDR_
+        BIT1/tdoInt_22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/ADDR_
+        BIT2/DATA_OUT_23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_cores/\jtag_lm32_inst/ADDR_
+        BIT2/tdoInt_22
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i20
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i2
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i19
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i1
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i18
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i17
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i16
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i17
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i0
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i31
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i15
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i14
+   Register :
+
+                                   Page 23
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i16
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i15
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i14
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i13
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i12
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i11
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i10
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i9
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i30
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i8
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i13
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i7
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i0
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i12
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i6
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i29
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i11
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i28
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i10
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i27
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i9
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i26
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i8
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i25
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i7
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i24
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i6
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i5
+   Register :
+
+                                   Page 24
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i4
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i3
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i2
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i5
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i1
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i4
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i21
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/MON_DAT_O__i3
+        
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i31
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i30
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i29
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i28
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i27
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i26
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i25
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i24
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i23
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i22
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i21
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i20
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i19
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_data_i0_i18
+   Register : xo2chub/bit_count[4]
+   Register : xo2chub/id_enable
+   Register : xo2chub/rom_rd_addr[0]
+   Register : xo2chub/rom_rd_addr[1]
+   Register : xo2chub/rom_rd_addr[2]
+   Register : xo2chub/rom_rd_addr[3]
+   Register : xo2chub/rom_rd_addr[4]
+   Register : xo2chub/rom_rd_addr[5]
+   Register : xo2chub/rom_rd_addr[6]
+
+                                   Page 25
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+   Register : xo2chub/rom_rd_addr[7]
+   Register : xo2chub/jshift_d1
+   Register : xo2chub/jce1_d1
+   Register : xo2chub/ip_enable[0]
+   Register : xo2chub/ip_enable[1]
+   Register : xo2chub/ip_enable[2]
+   Register : xo2chub/ip_enable[3]
+   Register : xo2chub/ip_enable[4]
+   Register : xo2chub/ip_enable[5]
+   Register : xo2chub/ip_enable[6]
+   Register : xo2chub/ip_enable[7]
+   Register : xo2chub/ip_enable[8]
+   Register : xo2chub/ip_enable[9]
+   Register : xo2chub/ip_enable[10]
+   Register : xo2chub/ip_enable[11]
+   Register : xo2chub/ip_enable[12]
+   Register : xo2chub/ip_enable[13]
+   Register : xo2chub/ip_enable[14]
+   Register : xo2chub/er1_shift_reg[1]
+   Register : xo2chub/er1_shift_reg[2]
+   Register : xo2chub/er1_shift_reg[3]
+   Register : xo2chub/er1_shift_reg[4]
+   Register : xo2chub/er1_shift_reg[5]
+   Register : xo2chub/er1_shift_reg[6]
+   Register : xo2chub/er1_shift_reg[7]
+   Register : xo2chub/er1_shift_reg[8]
+   Register : xo2chub/er1_shift_reg[9]
+   Register : xo2chub/er1_shift_reg[10]
+   Register : xo2chub/er1_shift_reg[11]
+   Register : xo2chub/er1_shift_reg[12]
+   Register : xo2chub/er1_shift_reg[13]
+   Register : xo2chub/er1_shift_reg[14]
+   Register : xo2chub/er1_shift_reg[15]
+   Register : xo2chub/er1_shift_reg[16]
+   Register : xo2chub/er1_shift_reg[17]
+   Register : xo2chub/er1_shift_reg[18]
+   Register : xo2chub/er1_shift_reg[19]
+   Register : xo2chub/er1_shift_reg[20]
+   Register : xo2chub/bit_count[0]
+   Register : xo2chub/bit_count[1]
+   Register : xo2chub/bit_count[2]
+   Register : xo2chub/bit_count[3]
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'counter_2_adj_3985' via the
+     GSR component.
+
+     Type and number of components of the type: 
+   Register = 126 
+   DP8KC = 4
+
+     Type and instance name of component: 
+
+                                   Page 26
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state_i1
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/tmp_ack_o_248
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/dly_i0
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i1
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i2
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i3
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i4
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i5
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/dly_i3
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/dly_i2
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i0
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i7
+   Register : mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/sram_data_out_i6
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/data_bus_error_seen_616
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/branch_target_m_i2_i3
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/valid_w_621
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/x_result_sel_mc_arith_x_627
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/x_result_sel_sext_x_628
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/x_result_sel_add_x_630
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_result_sel_load_m_663
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_w_i0
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/branch_target_m_i2_i4
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/write_idx_x_i0_i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/exception_m_669
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/valid_d_618
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/data_bus_error_exception_m_657
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/operand_w_i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/branch_target_m_i2_i2
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/valid_x_619
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/w_result_sel_mul_m_664
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/exception_m_669_rep_465
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/muliplicand_i0_i1
+        
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/multiplier/muliplicand_i0_i0
+        
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i20
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i5
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i31
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i19
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i4
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i30
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i18
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i3
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/a_i0_i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i17
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i2
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i16
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i0
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i29
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i15
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669__i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i28
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i14
+
+                                   Page 27
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i27
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i13
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669__i2
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i26
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i12
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i25
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i11
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669__i3
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669__i4
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i10
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/cycles_19669__i0
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i24
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i9
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i0
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/a_i0_i0
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i8
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i21
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i7
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i31
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i30
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i29
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i28
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i27
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i26
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i25
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i24
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i23
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i22
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i21
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i20
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i19
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i18
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i17
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i16
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i15
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i14
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i13
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i12
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i11
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i10
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i9
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i8
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i7
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i6
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i5
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i4
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i3
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i2
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/p__i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/b__i6
+
+                                   Page 28
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/wb_load_comp
+        lete_135
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i1
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i0
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i2
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i3
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i4
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i5
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i6
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/store_data_m
+        _i0_i7
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/stall_wb_load_136
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i1
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i2
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i6
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i7
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i3
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i4
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/uart_tx_va
+        lid_91
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i0
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/jtag_reg_d_i5
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/ie_66
+   Register : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/state_i0
+   Register :
+        mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/write_enable_30
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_3_0
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_1_2
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_0_3
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_2_1
+
+     EBR components with enabled GSR
+-------------------------------
+
+     These EBR components have the GSR property set to ENABLED. The components
+     will respond to the asynchronous reset signal 'counter_2_adj_3985' via the
+
+                                   Page 29
+
+
+
+
+Design:  vga_leds                                      Date:  11/30/17  05:38:45
+
+GSR Usage (cont)
+----------------
+     GSR component.
+
+     Type and number of components of the type: 
+   DP8KC = 4
+
+     Type and instance name of component: 
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_3_0
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_1_2
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_0_3
+   DP8KC : mico_cpu_inst/LM32I_ADR_O_31__I_0/ROM_DAT_O_31__I_13/ram/genblk1.lm32
+        _monitor_ram_0_2_1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 3 secs  
+   Total REAL Time: 3 secs  
+   Peak Memory Usage: 88 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 30
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

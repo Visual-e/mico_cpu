@@ -1,0 +1,393 @@
+----------------------------------------------------------------------
+Report for cell vga_leds.TECH
+Register bits:  1331 of 7209 (18.463%)
+I/O cells:      45
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        16          100.0
+                                 BB         8          100.0
+                              CCU2D        90          100.0
+                              DP8KC         4          100.0
+                           DPR16X4C        36          100.0
+                            EHXPLLJ         1          100.0
+                             FADD2B       151          100.0
+                            FD1P3AX       956          100.0
+                            FD1P3AY        31          100.0
+                            FD1P3DX         3          100.0
+                            FD1P3IX       152          100.0
+                            FD1S3AX       156          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3BX         4          100.0
+                            FD1S3DX        21          100.0
+                            FD1S3IX         7          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                                INV         1          100.0
+                            L6MUX21        31          100.0
+                               LUT4      2503          100.0
+                              MULT2       136          100.0
+                                 OB        36          100.0
+                              PFUMX       430          100.0
+            pmi_addsubMo32324b7f59e         1          100.0
+SUB MODULES
+                           arbiter2         1
+asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)         1
+asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)         1
+                            display         1
+gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)         1
+                             hvsync         1
+                         jtag_cores         1
+                         lm32_adder         1
+                        lm32_addsub         1
+                           lm32_cpu         1
+      lm32_debug(watchpoints=32'b0)         1
+                       lm32_decoder         1
+              lm32_instruction_unit         1
+                     lm32_interrupt         1
+                          lm32_jtag         1
+               lm32_load_store_unit         1
+                      lm32_logic_op         1
+                 lm32_mc_arithmetic         1
+                       lm32_monitor         1
+                   lm32_monitor_ram         1
+                    lm32_multiplier         1
+                       lm32_shifter         1
+                           lm32_top         1
+                           main_pll         1
+                           mico_cpu         1
+                              TOTAL      4802
+----------------------------------------------------------------------
+Report for cell main_pll.v1
+Instance Path : main_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell display.v1
+Instance Path : r_3__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13           14.4
+                            FD1P3AX        16            1.7
+                            FD1S3AX        33           21.2
+                            FD1S3BX         4          100.0
+                            FD1S3DX        21          100.0
+                            FD1S3IX         1           14.3
+                            L6MUX21         6           19.4
+                               LUT4       239            9.5
+                              PFUMX        17            4.0
+SUB MODULES
+                             hvsync         1
+                              TOTAL       351
+----------------------------------------------------------------------
+Report for cell hvsync.v1
+Instance Path : r_3__I_0.u_hvsync
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13           14.4
+                            FD1S3BX         4          100.0
+                            FD1S3DX        21          100.0
+                               LUT4        60            2.4
+                              PFUMX         1            0.2
+                              TOTAL        99
+----------------------------------------------------------------------
+Report for cell mico_cpu.v1
+Instance Path : mico_cpu_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        16          100.0
+                              CCU2D        77           85.6
+                              DP8KC         4          100.0
+                             FADD2B       151          100.0
+                            FD1P3AX       924           96.7
+                            FD1P3AY        31          100.0
+                            FD1P3DX         3          100.0
+                            FD1P3IX       152          100.0
+                            FD1S3AX       123           78.8
+                            FD1S3AY         1          100.0
+                            FD1S3IX         6           85.7
+                                INV         1          100.0
+                            L6MUX21        25           80.6
+                               LUT4      2177           87.0
+                              MULT2       136          100.0
+                              PFUMX       398           92.6
+            pmi_addsubMo32324b7f59e         1          100.0
+SUB MODULES
+                           arbiter2         1
+asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)         1
+asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)         1
+gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)         1
+                         jtag_cores         1
+                         lm32_adder         1
+                        lm32_addsub         1
+                           lm32_cpu         1
+      lm32_debug(watchpoints=32'b0)         1
+                       lm32_decoder         1
+              lm32_instruction_unit         1
+                     lm32_interrupt         1
+                          lm32_jtag         1
+               lm32_load_store_unit         1
+                      lm32_logic_op         1
+                 lm32_mc_arithmetic         1
+                       lm32_monitor         1
+                   lm32_monitor_ram         1
+                    lm32_multiplier         1
+                       lm32_shifter         1
+                           lm32_top         1
+                              TOTAL      4247
+----------------------------------------------------------------------
+Report for cell asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1).v1
+Instance Path : mico_cpu_inst.sramASRAM_DAT_O_31__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        54            5.6
+                            FD1P3IX        10            6.6
+                            FD1S3AX         2            1.3
+                            FD1S3IX         3           42.9
+                               LUT4       162            6.5
+                              PFUMX        16            3.7
+SUB MODULES
+asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)         1
+                              TOTAL       248
+----------------------------------------------------------------------
+Report for cell asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1).v1
+Instance Path : mico_cpu_inst.sramASRAM_DAT_O_31__I_0.core_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        54            5.6
+                            FD1P3IX        10            6.6
+                            FD1S3AX         2            1.3
+                            FD1S3IX         3           42.9
+                               LUT4       162            6.5
+                              PFUMX        16            3.7
+                              TOTAL       247
+----------------------------------------------------------------------
+Report for cell gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1).v1
+Instance Path : mico_cpu_inst.gpioGPIO_DAT_O_31__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        16            1.7
+                            FD1S3AX         1            0.6
+                               LUT4         2            0.1
+                              TOTAL        19
+----------------------------------------------------------------------
+Report for cell arbiter2.v1
+Instance Path : mico_cpu_inst.arbiter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         2            0.2
+                               LUT4        95            3.8
+                              TOTAL        97
+----------------------------------------------------------------------
+Report for cell lm32_top.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        16          100.0
+                              CCU2D        77           85.6
+                              DP8KC         4          100.0
+                             FADD2B       151          100.0
+                            FD1P3AX       852           89.1
+                            FD1P3AY        31          100.0
+                            FD1P3IX       142           93.4
+                            FD1S3AX       120           76.9
+                            FD1S3AY         1          100.0
+                            FD1S3IX         3           42.9
+                                INV         1          100.0
+                            L6MUX21        25           80.6
+                               LUT4      1855           74.1
+                              MULT2       136          100.0
+                              PFUMX       349           81.2
+            pmi_addsubMo32324b7f59e         1          100.0
+SUB MODULES
+                         jtag_cores         1
+                         lm32_adder         1
+                        lm32_addsub         1
+                           lm32_cpu         1
+      lm32_debug(watchpoints=32'b0)         1
+                       lm32_decoder         1
+              lm32_instruction_unit         1
+                     lm32_interrupt         1
+                          lm32_jtag         1
+               lm32_load_store_unit         1
+                      lm32_logic_op         1
+                 lm32_mc_arithmetic         1
+                       lm32_monitor         1
+                   lm32_monitor_ram         1
+                    lm32_multiplier         1
+                       lm32_shifter         1
+                              TOTAL      3780
+----------------------------------------------------------------------
+Report for cell jtag_cores.<NoName>
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0
+                              TOTAL         0
+----------------------------------------------------------------------
+Report for cell lm32_cpu.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        16          100.0
+                              CCU2D        77           85.6
+                             FADD2B       151          100.0
+                            FD1P3AX       819           85.7
+                            FD1P3AY        31          100.0
+                            FD1P3IX       108           71.1
+                            FD1S3AX       119           76.3
+                            FD1S3AY         1          100.0
+                            FD1S3IX         3           42.9
+                            L6MUX21        25           80.6
+                               LUT4      1766           70.6
+                              MULT2       136          100.0
+                              PFUMX       349           81.2
+            pmi_addsubMo32324b7f59e         1          100.0
+SUB MODULES
+                         lm32_adder         1
+                        lm32_addsub         1
+      lm32_debug(watchpoints=32'b0)         1
+                       lm32_decoder         1
+              lm32_instruction_unit         1
+                     lm32_interrupt         1
+                          lm32_jtag         1
+               lm32_load_store_unit         1
+                      lm32_logic_op         1
+                 lm32_mc_arithmetic         1
+                    lm32_multiplier         1
+                       lm32_shifter         1
+                              TOTAL      3614
+----------------------------------------------------------------------
+Report for cell lm32_shifter.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.shifter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        33            3.5
+                               LUT4       210            8.4
+                              PFUMX        21            4.9
+                              TOTAL       264
+----------------------------------------------------------------------
+Report for cell lm32_multiplier.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.multiplier
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        16          100.0
+                             FADD2B       151          100.0
+                            FD1P3AX        62            6.5
+                            FD1P3IX         2            1.3
+                            FD1S3AX        32           20.5
+                               LUT4         5            0.2
+                              MULT2       136          100.0
+                              TOTAL       404
+----------------------------------------------------------------------
+Report for cell lm32_mc_arithmetic.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.mc_arithmetic
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        21           23.3
+                            FD1P3AX        63            6.6
+                            FD1P3IX        71           46.7
+                            FD1S3AX         3            1.9
+                            FD1S3AY         1          100.0
+                            L6MUX21        25           80.6
+                               LUT4       337           13.5
+                              PFUMX        72           16.7
+                              TOTAL       593
+----------------------------------------------------------------------
+Report for cell lm32_logic_op.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.logic_op
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        64            2.6
+                              PFUMX        32            7.4
+                              TOTAL        96
+----------------------------------------------------------------------
+Report for cell lm32_load_store_unit.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.load_store_unit
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX       134           14.0
+                            FD1P3IX        10            6.6
+                            FD1S3AX        36           23.1
+                               LUT4       128            5.1
+                              PFUMX         8            1.9
+                              TOTAL       316
+----------------------------------------------------------------------
+Report for cell lm32_jtag.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.jtag_reg_d_7__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        19            2.0
+                            FD1P3IX         9            5.9
+                            FD1S3AX         4            2.6
+                               LUT4        34            1.4
+                              TOTAL        66
+----------------------------------------------------------------------
+Report for cell lm32_interrupt.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.interrupt
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        34            3.6
+                            FD1P3IX         1            0.7
+                               LUT4        11            0.4
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell lm32_instruction_unit.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.instruction_unit
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        32           35.6
+                            FD1P3AX       187           19.6
+                            FD1P3AY        30           96.8
+                            FD1S3AX         1            0.6
+                               LUT4        63            2.5
+                              TOTAL       313
+----------------------------------------------------------------------
+Report for cell lm32_debug(watchpoints=32'b0).v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.hw_debug
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1            0.1
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell lm32_decoder.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.decoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       208            8.3
+                              PFUMX         7            1.6
+                              TOTAL       215
+----------------------------------------------------------------------
+Report for cell lm32_adder.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.adder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+            pmi_addsubMo32324b7f59e         1          100.0
+SUB MODULES
+                        lm32_addsub         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell lm32_addsub.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.cpu.adder.addsub
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+            pmi_addsubMo32324b7f59e         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell lm32_monitor.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.ROM_DAT_O_31__I_13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         4          100.0
+                            FD1P3AX        33            3.5
+                            FD1P3IX        34           22.4
+                            FD1S3AX         1            0.6
+                               LUT4        56            2.2
+SUB MODULES
+                   lm32_monitor_ram         1
+                              TOTAL       129
+----------------------------------------------------------------------
+Report for cell lm32_monitor_ram.v1
+Instance Path : mico_cpu_inst.LM32I_ADR_O_31__I_0.ROM_DAT_O_31__I_13.ram
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         4          100.0
+                              TOTAL         4

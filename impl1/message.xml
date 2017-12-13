@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(9): </Dynamic>
+            <Dynamic>NUM_RED_LEDS</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(10): </Dynamic>
+            <Dynamic>NUM_GREEN_LEDS</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(11): </Dynamic>
+            <Dynamic>NUM_SEGMENTS</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(32): </Dynamic>
+            <Dynamic>r_hsync</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(33): </Dynamic>
+            <Dynamic>r_vsync</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(34): </Dynamic>
+            <Dynamic>red_word</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(35): </Dynamic>
+            <Dynamic>green_word</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901875</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(36): </Dynamic>
+            <Dynamic>blue_word</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(46): </Dynamic>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>46</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(327): </Dynamic>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>327</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(52): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(54): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(57): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typeb.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(58): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(59): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>59</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(53): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(54): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v(60): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(60): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(61): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>61</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(52): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(64): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v(49): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(65): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(66): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(94): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(791): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v</Navigation>
+            <Navigation>791</Navigation>
+        </Message>
+        <Message>
+            <ID>35901407</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(653): </Dynamic>
+            <Dynamic>preserve_driver</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v</Navigation>
+            <Navigation>653</Navigation>
+        </Message>
+        <Message>
+            <ID>35901407</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(652): </Dynamic>
+            <Dynamic>preserve_signal</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v</Navigation>
+            <Navigation>652</Navigation>
+        </Message>
+        <Message>
+            <ID>35901214</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v(54): </Dynamic>
+            <Dynamic>value</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(67): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v(52): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_dcache.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(68): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>68</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(53): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(186): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v</Navigation>
+            <Navigation>186</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(69): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(56): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(336): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v</Navigation>
+            <Navigation>336</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(70): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>70</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v(57): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_icache.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(71): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>71</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(71): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Navigation>
+            <Navigation>71</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(380): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Navigation>
+            <Navigation>380</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(72): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>72</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901407</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(130): </Dynamic>
+            <Dynamic>preserve_signal</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>130</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(73): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(63): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v</Navigation>
+            <Navigation>63</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(283): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v</Navigation>
+            <Navigation>283</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(74): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>74</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(76): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>76</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(79): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(82): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(84): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>84</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(52): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(277): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_functions.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v</Navigation>
+            <Navigation>277</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(86): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(50): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(51): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(87): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v(51): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v(104): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include_all.v</Navigation>
+            <Navigation>104</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v(52): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_include.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v(53): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_trace.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(328): </Dynamic>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>328</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(64): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(112): </Dynamic>
+            <Dynamic>asram_core</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v</Navigation>
+            <Navigation>112</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(113): </Dynamic>
+            <Dynamic>asram_core</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v</Navigation>
+            <Navigation>113</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(114): </Dynamic>
+            <Dynamic>asram_core</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(329): </Dynamic>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>329</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v(56): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(330): </Dynamic>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>330</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(79): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(176): </Dynamic>
+            <Dynamic>gpio</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>176</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(331): </Dynamic>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>331</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(65): </Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/system_conf.v</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(87): </Dynamic>
+            <Dynamic>tpio</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v(2): </Dynamic>
+            <Dynamic>vga_leds</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v(8): </Dynamic>
+            <Dynamic>main_pll</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/main_pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKI_DIV=2,CLKFB_DIV=3,CLKOS_DIV=6,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=7,CLKOS_CPHASE=5)</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(334): </Dynamic>
+            <Dynamic>mico_cpu</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>334</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): </Dynamic>
+            <Dynamic>BB</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(48): </Dynamic>
+            <Dynamic>arbiter2</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(289): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>289</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(293): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>293</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(297): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>297</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(301): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>2</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>301</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(305): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>305</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(309): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>309</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(313): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>313</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(316): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>316</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(317): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>317</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(318): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>318</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(321): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>321</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(322): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>322</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(323): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>323</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(507): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>507</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(512): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>512</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v(58): </Dynamic>
+            <Dynamic>lm32_top</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_top.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v(100): </Dynamic>
+            <Dynamic>lm32_cpu</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_cpu.v</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(77): </Dynamic>
+            <Dynamic>lm32_instruction_unit</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35901142</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(824): </Dynamic>
+            <Dynamic>display</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Navigation>
+            <Navigation>824</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(113): </Dynamic>
+            <Dynamic>lm32_decoder</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v</Navigation>
+            <Navigation>113</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v(601): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>30</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_decoder.v</Navigation>
+            <Navigation>601</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(69): </Dynamic>
+            <Dynamic>lm32_load_store_unit</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v(56): </Dynamic>
+            <Dynamic>lm32_adder</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_adder.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v(55): </Dynamic>
+            <Dynamic>lm32_addsub</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_addsub.v</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v(48): </Dynamic>
+            <Dynamic>pmi_addsub(pmi_data_width=32,pmi_result_width=32,pmi_family=&quot;MachXO2&quot;)</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/pmi_def.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v(56): </Dynamic>
+            <Dynamic>lm32_logic_op</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_logic_op.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(56): </Dynamic>
+            <Dynamic>lm32_shifter</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v(149): </Dynamic>
+            <Dynamic>64</Dynamic>
+            <Dynamic>32</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_shifter.v</Navigation>
+            <Navigation>149</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(56): </Dynamic>
+            <Dynamic>lm32_multiplier</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v(64): </Dynamic>
+            <Dynamic>lm32_mc_arithmetic</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_mc_arithmetic.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(56): </Dynamic>
+            <Dynamic>lm32_interrupt</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(164): </Dynamic>
+            <Dynamic>3</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>164</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(165): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>165</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(166): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>166</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(87): </Dynamic>
+            <Dynamic>lm32_jtag</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v(69): </Dynamic>
+            <Dynamic>lm32_debug(watchpoints=32'b0)</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_debug.v</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v(57): </Dynamic>
+            <Dynamic>lm32_monitor</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v(53): </Dynamic>
+            <Dynamic>lm32_monitor_ram</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_monitor_ram.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_2</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_3</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_4</Dynamic>
+            <Navigation>D:/dev/lattice/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(75): </Dynamic>
+            <Dynamic>jtag_cores</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(60): </Dynamic>
+            <Dynamic>jtagconn16</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v(51): </Dynamic>
+            <Dynamic>jtag_lm32</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_lm32.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v(65): </Dynamic>
+            <Dynamic>TYPEA</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/typea.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v(152): </Dynamic>
+            <Dynamic>CONTROL_DATAN</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/jtag_cores.v</Navigation>
+            <Navigation>152</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v(58): </Dynamic>
+            <Dynamic>asram_top(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_top.v</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v(66): </Dynamic>
+            <Dynamic>asram_core(SRAM_DATA_WIDTH=8,SRAM_ADDR_WIDTH=19,SRAM_BE_WIDTH=1,READ_LATENCY=2,WRITE_LATENCY=2,DATA_OUTPUT_REG=1)</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/asram_top/rtl/verilog/asram_core.v</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(80): </Dynamic>
+            <Dynamic>gpio(DATA_WIDTH=32'b0100000,INPUT_WIDTH=32'b01,OUTPUT_WIDTH=32'b01,EDGE=1,POSE_EDGE_IRQ=1,INPUT_PORTS_ONLY=0,OUTPUT_PORTS_ONLY=1)</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(180): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>180</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(181): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>181</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(182): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>182</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v(183): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/gpio.v</Navigation>
+            <Navigation>183</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(66): </Dynamic>
+            <Dynamic>tpio(DATA_WIDTH=1,IRQ_MODE=0)</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(109): </Dynamic>
+            <Dynamic>IRQ_MASK</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>109</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(639): </Dynamic>
+            <Dynamic>PIO_IN[31]</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>639</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(5): </Dynamic>
+            <Dynamic>display</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v(6): </Dynamic>
+            <Dynamic>hvsync</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/hvsync.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(78): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>78</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(79): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(80): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(136): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>136</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(137): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>137</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(138): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(139): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>139</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(140): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(141): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>141</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(151): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>151</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(158): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>158</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(165): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>165</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(168): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>168</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(171): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>171</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(174): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>174</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(177): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>177</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(180): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>180</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(187): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>187</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(190): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>190</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(193): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>193</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(196): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>196</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(199): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>199</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(202): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>202</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(205): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>205</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(208): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>208</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(211): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>211</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(214): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>214</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(217): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>217</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(220): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>220</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(228): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>228</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(231): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>231</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(234): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>234</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(237): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>237</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(240): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>240</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(243): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>243</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(250): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>250</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(253): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>253</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(256): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>256</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(259): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>259</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(262): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>262</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(265): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>265</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(268): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>268</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(271): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>271</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(274): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>274</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(277): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>277</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(280): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>280</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(283): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>283</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(291): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(294): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>294</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(297): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>297</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(300): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>300</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(303): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>303</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v(306): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/display.v</Navigation>
+            <Navigation>306</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v(52): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Dynamic>segments</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/vga_leds.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(639): </Dynamic>
+            <Dynamic>PIO_IN[31]</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>639</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>n50</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v(109): </Dynamic>
+            <Dynamic>IRQ_MASK</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/gpio/rtl/verilog/tpio.v</Navigation>
+            <Navigation>109</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\r_3__I_0/segments_fixed</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(862): </Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_lock_o_74</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Navigation>
+            <Navigation>862</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\mico_cpu_inst/sramASRAM_DAT_O_31__I_0/core_inst/state</Dynamic>
+            <Dynamic>gray</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/mc_arithmetic/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\r_3__I_0/seg7_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>30</Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_adr_o</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>31</Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_adr_o</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_cti_o</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v(743): </Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/load_store_unit/d_lock_o_133</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_load_store_unit.v</Navigation>
+            <Navigation>743</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v(115): </Dynamic>
+            <Dynamic>a[31]</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_multiplier.v</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sram_data[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v(862): </Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/instruction_unit/i_cti_o_i0</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_instruction_unit.v</Navigation>
+            <Navigation>862</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v(584): </Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/jtag_reg_d_7__I_0/state_i0</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_jtag.v</Navigation>
+            <Navigation>584</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v(283): </Dynamic>
+            <Dynamic>\mico_cpu_inst/LM32I_ADR_O_31__I_0/cpu/interrupt/ip_i0_i31</Dynamic>
+            <Navigation>E:/projects/prj_fpga_lattice/prj_VE-LCMXO27000HC/lcmx_prj/projects/mico_cpu/mico_cpu/soc/../components/lm32_top/rtl/verilog/lm32_interrupt.v</Navigation>
+            <Navigation>283</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v(275): </Dynamic>
+            <Dynamic>\mico_cpu_inst/arbiter/locked_90</Dynamic>
+            <Navigation>e:/projects/prj_fpga_lattice/prj_ve-lcmxo27000hc/lcmx_prj/projects/mico_cpu/mico_cpu/soc/mico_cpu.v</Navigation>
+            <Navigation>275</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>xo2chub/tdoa</Dynamic>
+            <Navigation>xo2chub/tdoa</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>xo2chub/cdn</Dynamic>
+            <Navigation>xo2chub/cdn</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>xo2chub/ip_enable[15]</Dynamic>
+            <Navigation>xo2chub/ip_enable[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>xo2chub/genblk7.un1_jtagf_u</Dynamic>
+            <Navigation>xo2chub/genblk7.un1_jtagf_u</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>xo2chub/genblk7.un1_jtagf_u_1</Dynamic>
+            <Navigation>xo2chub/genblk7.un1_jtagf_u_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=r_3__I_0/w_hsync loads=9 clock_loads=8
+   Signal=mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=r_3__I_0/w_hsync loads=9 clock_loads=8
+   Signal=mico_cpu_inst/LM32I_ADR_O_31__I_0/jtag_update loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>
